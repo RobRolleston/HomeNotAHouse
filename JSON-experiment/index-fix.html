@@ -15,8 +15,8 @@
 
 <!-- This is where data for our selected neighborhood will display -->
 <h2 id="csaHeader"></h2>
-<ol id="data">
-</ol>
+<ul id="data">
+</ul>
 
 <script>
 //This is our BNIA data, which is JSON converted from a CSV file
@@ -374,7 +374,10 @@ function populateData(selector){
 		document.getElementById('csaHeader').innerHTML = info[selectedIdx].CSA2010;
 	
 		//Sets the data section to show our data
-		document.getElementById('data').innerHTML = info[selectedIdx].domvio10;
+		document.getElementById('data').innerHTML = 
+		'<li><p>Domestic Violence Rate: ' + info[selectedIdx].domvio10 + '</p></li>' + 
+		'<li><p>Crime Rate: ' + info[selectedIdx].crime10 + '</p></li>' + 
+		'<li><p>Violent Crime Rate: ' + info[selectedIdx].viol10 + '</p></li>';
 	}
 }
 
