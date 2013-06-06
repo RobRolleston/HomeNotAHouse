@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.x.axis path {
+  display: none;
+}
+
+</style>
+<body>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+
+//AMM Controls the size of the visualization
+var margin = {top: 20, right: 20, bottom: 30, left: 40},
+    width = 900 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+var x0 = d3.scale.ordinal()
+    .rangeRoundBands([0, width], .1);
+
+var x1 = d3.scale.ordinal(0);
+
+var y = d3.scale.linear()
+    .range([height, 0]);
+
+//AMM Controls the color of the bars in the order that they appear
+var color = d3.scale.ordinal()
+    .range(["#98abc5", "#8a89a6", "#7b6888"]);
+
+var xAxis = d3.svg.axis()
+    .scale(x0)
+    .orient("bottom");
+
+//AMM Controls the numbers on the y-axis
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left")
+    .tickFormat(d3.format("1s"));
+    
+//EJC This puts the chart into the body tag including margins
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+//AMM Calls the data file
+d3.csv("bnia_crime_2010.csv", function(error, data) {
+
+  //EJC This defines that the X1 (the groupings) is every column BUT CSA2010
+  var x1Names = d3.keys(data[0]).filter(function(key) { return key !== "CSA2010"; });
+  
+  //EJC Think this is setting up the data map to read entries for each of the sets of the x1 cols stored in d.groupings
+  data.forEach(function(d) {
+    d.groupings = x1Names.map(function(name) { return {name: name, value: +d[name]}; });
+  });
+  
+  //EJC Sets X0 (groupings) by CSA2010
+  x0.domain(data.map(function(d) { return d.CSA2010; }));
+  
+  //EJC Sets X1 (group values) by all the other columns
+  x1.domain(x1Names).rangeRoundBands([0, x0.rangeBand()]);
+  
+  //EJC Sets Y range(from 0 to the max value)
+  y.domain([0, d3.max(data, function(d) { return d3.max(d.groupings, function(d) { return d.value; }); })]);
+  
+  //EJC Creating X and Y axis including a rotated label on the Y
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+    .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .text("Incidents per 1,000 people");
+ 
+  //EJC This is building the actual x0 areas
+  var x0data = svg.selectAll(".CSA2010")
+      .data(data)
+    .enter().append("g")
+      .attr("class", "g")
+      .attr("transform", function(d) { return "translate(" + x0(d.CSA2010) + ",0)"; });
+  
+  //EJC This is building the internal x1 bars
+  x0data.selectAll("rect")
+      .data(function(d) { return d.groupings; })
+    .enter().append("rect")
+      .attr("width", x1.rangeBand())
+      .attr("x", function(d) { return x1(d.name); })
+      .attr("y", function(d) { return y(d.value); })
+      .attr("height", function(d) { return height - y(d.value); })
+      .style("fill", function(d) { return color(d.name); });
+  
+  //EJC Creates the legend
+  var legend = svg.selectAll(".legend")
+      .data(x1Names.slice().reverse())
+    .enter().append("g")
+      .attr("class", "legend")
+      .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+  legend.append("rect")
+      .attr("x", width - 18)
+      .attr("width", 18)
+      .attr("height", 18)
+      .style("fill", color);
+
+  legend.append("text")
+      .attr("x", width - 24)
+      .attr("y", 9)
+      .attr("dy", ".35em")
+      .style("text-anchor", "end")
+      .text(function(d) { return d; });
+
+});
+
+</script>
