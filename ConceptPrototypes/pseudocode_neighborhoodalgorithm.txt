@@ -1,0 +1,46 @@
+// Declare variables
+given that neighborhoods is an array of neighborhood names, average house values, and average crime rates
+given housingPrices is an array of price ranges
+given crimeRates is an array of crime rate ranges
+
+// Initialize
+Set housing price dropdown menu to lowest value in housingPrices
+Set crime rate dropdown menu to highest value in crimeRates
+
+// Cycle through all neighborhoods for housing price matches
+for every neighborhood name in neighborhoods
+	if average house value is within user selected housingPrice then
+		add neighborhood to housePriceOptions
+
+// Cycle through all neighborhoods for crime rate matches
+for every neighborhood name in neighborhoods
+	if average crime rate is within user selected crimeRate then
+		add neighborhood to crimeRateOptions
+		
+// Determine if there is/are "perfect match(es)"
+For every neighborhood name in neighborhoods
+	if neighborhood name appears in both housePriceOptions and crimeRateOptions
+		display neighborhood name
+	else
+		display "No perfect matches found, see 3 closest matches" or something
+
+
+// IF THERE IS NOT A PERFECT MATCH, THIS FUNCTION WILL PRODUCE "3 CLOSEST MATCHES"
+// Need to convert crime rates and house prices to an index somehow in order for this to work
+For every neighborhood name in neighborhoods
+	Subtract user selected housingPrice from actual housing price
+		record absolute value of housingPriceDifference
+	Subtract user selected crimeRate from actual crime rate
+		record absolute value of crimeRateDifference
+
+// Need to create an array of this, but how?
+neighborhoodScores = housingPriceDifferences + crimeRateDifferences
+
+// Sort the scores
+for every neighborhoodScore in neighborhoodScores
+	sort lowest to highest
+	select first three = best matches
+
+// Display the results
+Get element called "Results"
+	write best matches
