@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+  <title>JavaScript And JSON</title>
+</head>
+
+<script src="bniadata.json"></script>
+
+<body>
+
+<h2>Choose a Neighborhood</h2>
+<!-- Dropdown for CSA data including calling method on change -->
+<!-- Go to line 355 to see how the drop down menu gets populated -->
+<select id="csaSelect" onchange='populateData(this);'>
+<!-- This selection area will be populated by options -->
+</select>
+
+<!-- This is where data for our selected neighborhood will display -->
+<h2 id="csaHeader"></h2>
+<ul id="data">
+</ul>
+
+<script>
+
+//This populates our drop down menu with the CSA names
+var options = '<option value="-1">--Please select a Neighborhood--</option>';
+for(var i = 0; i < info.length; i++) {
+	options += '<option value="' + i + '">' + info[i].CSA2010 + '</option>';
+}
+var csaSelect = document.getElementById('csaSelect');
+csaSelect.innerHTML = options;
+
+
+//This function takes your dropdown selection and displays it on the page
+function populateData(selector){
+
+	//Get the selected value from the passed dropdown
+	var selectedIdx = parseInt(selector.options[selector.selectedIndex].value);
+
+	//This 'if' statement makes it so the 'first' option (which is the default value) doesn't return any data
+	if(selectedIdx >= 0){
+		//Sets the header to display the selected place's name
+		document.getElementById('csaHeader').innerHTML = info[selectedIdx].CSA2010;
+
+		//Sets the data section to show our data
+		document.getElementById('data').innerHTML = 
+		'<li><p>Domestic Violence Rate: ' + info[selectedIdx].domvio10 + '</p></li>' + 
+		'<li><p>Crime Rate: ' + info[selectedIdx].crime10 + '</p></li>' + 
+		'<li><p>Violent Crime Rate: ' + info[selectedIdx].viol10 + '</p></li>';
+	}
+}
+
+</script>
+</body>
+</html>
