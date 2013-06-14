@@ -1,0 +1,333 @@
+var info = [
+  {
+		"CSA2010": "Allendale/Irvington/S. Hilton",
+		"domvio10": "59.38",
+		"crime10": "40.57",
+		"viol10": "12.64"
+	},
+	{
+		"CSA2010": "Beechfield/Ten Hills/West Hills",
+		"domvio10": "47.86",
+		"crime10": "33.59",
+		"viol10": "8.4"
+	},
+	{
+		"CSA2010": "Belair-Edison",
+		"domvio10": "51.1",
+		"crime10": "50.3",
+		"viol10": "13.26"
+	},
+	{
+		"CSA2010": "Brooklyn/Curtis Bay/Hawkins Point",
+		"domvio10": "68.03",
+		"crime10": "81.65",
+		"viol10": "25.35"
+	},
+	{
+		"CSA2010": "Canton",
+		"domvio10": "34.32",
+		"crime10": "60.99",
+		"viol10": "8.27"
+	},
+	{
+		"CSA2010": "Cedonia/Frankford",
+		"domvio10": "60.24",
+		"crime10": "43.72",
+		"viol10": "11.97"
+	},
+	{
+		"CSA2010": "Cherry Hill",
+		"domvio10": "62.91",
+		"crime10": "59.99",
+		"viol10": "22.56"
+	},
+	{
+		"CSA2010": "Chinquapin Park/Belvedere",
+		"domvio10": "39.71",
+		"crime10": "43.58",
+		"viol10": "12.64"
+	},
+	{
+		"CSA2010": "Claremont/Armistead",
+		"domvio10": "60.38",
+		"crime10": "52.61",
+		"viol10": "13.24"
+	},
+	{
+		"CSA2010": "Clifton-Berea",
+		"domvio10": "49.73",
+		"crime10": "57.93",
+		"viol10": "23.29"
+	},
+	{
+		"CSA2010": "Cross-Country/Cheswolde",
+		"domvio10": "22.56",
+		"crime10": "15.42",
+		"viol10": "1.76"
+	},
+	{
+		"CSA2010": "Dickeyville/Franklintown",
+		"domvio10": "55.35",
+		"crime10": "49.5",
+		"viol10": "7.07"
+	},
+	{
+		"CSA2010": "Dorchester/Ashburton",
+		"domvio10": "51.59",
+		"crime10": "52.35",
+		"viol10": "15.44"
+	},
+	{
+		"CSA2010": "Downtown/Seton Hill",
+		"domvio10": "91.87",
+		"crime10": "424.44",
+		"viol10": "97.85"
+	},
+	{
+		"CSA2010": "Edmondson Village",
+		"domvio10": "43.42",
+		"crime10": "28.48",
+		"viol10": "8.23"
+	},
+	{
+		"CSA2010": "Fells Point",
+		"domvio10": "40.49",
+		"crime10": "62.29",
+		"viol10": "13.5"
+	},
+	{
+		"CSA2010": "Forest Park/Walbrook",
+		"domvio10": "51.38",
+		"crime10": "48.74",
+		"viol10": "10.36"
+	},
+	{
+		"CSA2010": "Glen-Falstaff",
+		"domvio10": "47.2",
+		"crime10": "53.57",
+		"viol10": "11.73"
+	},
+	{
+		"CSA2010": "Greater Charles Village/Barclay",
+		"domvio10": "43.32",
+		"crime10": "74.31",
+		"viol10": "17.14"
+	},
+	{
+		"CSA2010": "Greater Govans",
+		"domvio10": "45.03",
+		"crime10": "42.22",
+		"viol10": "12.08"
+	},
+	{
+		"CSA2010": "Greater Mondawmin",
+		"domvio10": "62.54",
+		"crime10": "112.42",
+		"viol10": "24.78"
+	},
+	{
+		"CSA2010": "Greater Roland Park/Poplar Hill",
+		"domvio10": "32.53",
+		"crime10": "32.13",
+		"viol10": "2.03"
+	},
+	{
+		"CSA2010": "Greater Rosemont",
+		"domvio10": "64.33",
+		"crime10": "63.5",
+		"viol10": "19.52"
+	},
+	{
+		"CSA2010": "Greenmount East",
+		"domvio10": "49.97",
+		"crime10": "57.37",
+		"viol10": "19.65"
+	},
+	{
+		"CSA2010": "Hamilton",
+		"domvio10": "42.46",
+		"crime10": "40.84",
+		"viol10": "9.46"
+	},
+	{
+		"CSA2010": "Harbor East/Little Italy",
+		"domvio10": "74.9",
+		"crime10": "119.29",
+		"viol10": "28.48"
+	},
+	{
+		"CSA2010": "Harford/Echodale",
+		"domvio10": "44.06",
+		"crime10": "41.45",
+		"viol10": "10.69"
+	},
+	{
+		"CSA2010": "Highlandtown",
+		"domvio10": "46.21",
+		"crime10": "77.52",
+		"viol10": "20.69"
+	},
+	{
+		"CSA2010": "Howard Park/West Arlington",
+		"domvio10": "46.26",
+		"crime10": "50.49",
+		"viol10": "11.4"
+	},
+	{
+		"CSA2010": "Inner Harbor/Federal Hill",
+		"domvio10": "57.3",
+		"crime10": "165.15",
+		"viol10": "18.65"
+	},
+	{
+		"CSA2010": "Lauraville",
+		"domvio10": "48.81",
+		"crime10": "39.6",
+		"viol10": "6.27"
+	},
+	{
+		"CSA2010": "Loch Raven",
+		"domvio10": "45.13",
+		"crime10": "34.29",
+		"viol10": "8.43"
+	},
+	{
+		"CSA2010": "Madison/East End",
+		"domvio10": "63.23",
+		"crime10": "65.54",
+		"viol10": "25.06"
+	},
+	{
+		"CSA2010": "Medfield/Hampden/Woodberry",
+		"domvio10": "34.16",
+		"crime10": "51.18",
+		"viol10": "7.13"
+	},
+	{
+		"CSA2010": "Midtown",
+		"domvio10": "25.03",
+		"crime10": "92.88",
+		"viol10": "15.18"
+	},
+	{
+		"CSA2010": "Midway/Coldstream",
+		"domvio10": "58.08",
+		"crime10": "66.4",
+		"viol10": "22.03"
+	},
+	{
+		"CSA2010": "Morrell Park/Violetville",
+		"domvio10": "59.35",
+		"crime10": "68.05",
+		"viol10": "6.58"
+	},
+	{
+		"CSA2010": "Mt. Washington/Coldspring",
+		"domvio10": "45.28",
+		"crime10": "33.09",
+		"viol10": "2.32"
+	},
+	{
+		"CSA2010": "North Baltimore/Guilford/Homeland",
+		"domvio10": "29.09",
+		"crime10": "25.82",
+		"viol10": "3.15"
+	},
+	{
+		"CSA2010": "Northwood",
+		"domvio10": "39.18",
+		"crime10": "39.9",
+		"viol10": "9.55"
+	},
+	{
+		"CSA2010": "Oldtown/Middle East",
+		"domvio10": "63.73",
+		"crime10": "102.4",
+		"viol10": "27.8"
+	},
+	{
+		"CSA2010": "Orangeville/East Highlandtown",
+		"domvio10": "54.32",
+		"crime10": "85.86",
+		"viol10": "20.37"
+	},
+	{
+		"CSA2010": "Patterson Park North & East",
+		"domvio10": "53.54",
+		"crime10": "75.68",
+		"viol10": "17.46"
+	},
+	{
+		"CSA2010": "Penn North/Reservoir Hill",
+		"domvio10": "63.2",
+		"crime10": "64.23",
+		"viol10": "18.82"
+	},
+	{
+		"CSA2010": "Pimlico/Arlington/Hilltop",
+		"domvio10": "51.12",
+		"crime10": "58.06",
+		"viol10": "23.44"
+	},
+	{
+		"CSA2010": "Poppleton/The Terraces/Hollins Market",
+		"domvio10": "64.49",
+		"crime10": "80.22",
+		"viol10": "26.54"
+	},
+	{
+		"CSA2010": "Sandtown-Winchester/Harlem Park",
+		"domvio10": "59.55",
+		"crime10": "69.48",
+		"viol10": "27.05"
+	},
+	{
+		"CSA2010": "South Baltimore",
+		"domvio10": "19.44",
+		"crime10": "35.55",
+		"viol10": "2.97"
+	},
+	{
+		"CSA2010": "Southeastern",
+		"domvio10": "59.42",
+		"crime10": "57.83",
+		"viol10": "10.7"
+	},
+	{
+		"CSA2010": "Southern Park Heights",
+		"domvio10": "57.06",
+		"crime10": "59.55",
+		"viol10": "18.74"
+	},
+	{
+		"CSA2010": "Southwest Baltimore",
+		"domvio10": "71.96",
+		"crime10": "79.34",
+		"viol10": "28.8"
+	},
+	{
+		"CSA2010": "The Waverlies",
+		"domvio10": "61.14",
+		"crime10": "70.55",
+		"viol10": "18.44"
+	},
+	{
+		"CSA2010": "Upton/Druid Heights",
+		"domvio10": "64.89",
+		"crime10": "65.22",
+		"viol10": "27.29"
+	},
+	{
+		"CSA2010": "Washington Village/Pigtown",
+		"domvio10": "83.05",
+		"crime10": "123.93",
+		"viol10": "25.44"
+	},
+	{
+		"CSA2010": "Westport/Mt. Winans/Lakeland",
+		"domvio10": "52.82",
+		"crime10": "78.52",
+		"viol10": "19.53"
+	}
+];
+
