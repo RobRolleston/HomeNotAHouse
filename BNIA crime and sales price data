@@ -1,0 +1,167 @@
+[
+  {
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Allendale/Irvington/South Hilton\t54950\t55000\t55000\t58250\t56575\t72000\t98000\t100000\t102000\t89196\t42500\t63.7\t73.2\t71.67\t52.43\t51.49\t46.79\t43.55\t38.01\t44.85\t42.13\t40.57"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Beechfield/Ten Hills/West Hills\t73500\t78500\t82200\t84000\t91000\t120000\t160000\t183000\t169000\t154950\t142250\t56.8\t53.3\t32.16\t52.37\t41.37\t36.22\t37.07\t39.42\t35.2\t40.12\t33.59"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Belair-Edison\t58000\t57582\t59929\t59000\t65000\t78000\t112400\t119000\t106000\t99900\t56000\t67.9\t71\t61.4\t62.55\t71.43\t65.49\t58.11\t52.69\t46.24\t41.51\t50.3"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Brooklyn/Curtis Bay/Hawkins Point\t47500\t49618\t49900\t55100\t57900\t63500\t94700\t95600\t89900\t80000\t58005\t101.2\t103.7\t98.64\t86.42\t83.27\t72.03\t80.27\t82.75\t88.44\t80.42\t81.65"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Canton\t103500\t144500\t162000\t194000\t226900\t271075\t290000\t299000\t270000\t240000\t251000\t141.9\t117.4\t88.3\t106.56\t80.46\t63.05\t80.6\t89.16\t77.89\t89.02\t60.99"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Cedonia/Frankford\t70925\t69900\t74000\t75000\t90000\t121550\t142900\t150000\t145000\t130000\t103225\t62.6\t65.3\t50.06\t59.88\t58.55\t50.4\t60.95\t56.02\t52.97\t41.61\t43.72"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Cherry Hill\t53000\t52000\t45000\t46000\t47250\t62000\t115075\t67000\t55000\t93500\t69000\t81.2\t95\t80.9\t79.33\t67.46\t63.67\t65.24\t54.93\t66.94\t59.5\t59.99"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Chinquapin Park/Belvedere\t72950\t75250\t75000\t84700\t101000\t107500\t145793\t152000\t169500\t167000\t117450\t60.6\t59.1\t48.7\t45.27\t45.64\t44.17\t43.93\t43.44\t39.15\t39.64\t43.58"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Claremont/Armistead\t64500\t57000\t63700\t53950\t71950\t202940\t270680\t153000\t164800\t100000\t139000\t89.5\t87.2\t61.76\t63.55\t57.7\t63.19\t60.69\t62.96\t55.55\t42.53\t52.61"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Clifton-Berea\t42000\t43000\t35850\t43000\t31475\t50000\t65000\t67000\t66875\t50000\t13250\t94.5\t86.4\t77.22\t62.02\t52.34\t46.17\t55.7\t49.06\t48.34\t49.7\t57.93"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Cross-Country/Cheswolde\t97000\t109000\t127000\t129500\t173500\t197000\t267500\t205000\t224000\t206250\t165000\t34.3\t31.9\t21.7\t28.15\t26.53\t20.26\t19.24\t17.21\t13.73\t17.55\t15.42"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Dickeyville/Franklintown\t125000\t131500\t167500\t160000\t160000\t170000\t280500\t238500\t253250\t205000\t245000\t67.4\t50.5\t45.02\t55.99\t39.76\t36.11\t32.45\t42.96\t53.02\t43.88\t49.5"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Dorchester/Ashburton\t69900\t69000\t73000\t79450\t85000\t103000\t157450\t143000\t141750\t100500\t68150\t65.8\t69.1\t44.91\t58.14\t49.48\t47.87\t51.4\t53.33\t52.85\t53.33\t52.35"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Downtown/Seton Hill\t62500\t68000\t68400\t69650\t120000\t155000\t302000\t292500\t250000\t220000\t210450\t949.9\t868.5\t641.49\t531.57\t535.56\t515\t487.52\t466.12\t465.07\t423.75\t424.44"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Edmondson Village\t61450\t60300\t61000\t56000\t57500\t72000\t110000\t109000\t131000\t90000\t49100\t59.9\t57.6\t46.39\t48.86\t42.91\t41\t38.19\t37.52\t33.25\t24.49\t28.48"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Fells Point\t90000\t90000\t125000\t145200\t190000\t265000\t235000\t287750\t266000\t245000\t215500\t191.2\t165.4\t158.48\t136.31\t118.22\t95.23\t104.68\t96.28\t98.14\t81.34\t62.29"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Forest Park/Walbrook\t60000\t60000\t63523\t60840\t76200\t88000\t140000\t108425\t114750\t105000\t60250\t63\t59.6\t61.03\t62.33\t48.93\t47.72\t48.58\t45.04\t44.09\t46.59\t48.74"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Glen-Falstaff\t72900\t67500\t74950\t82950\t89200\t112000\t150000\t162900\t150000\t131000\t102600\t95.9\t91.8\t81.11\t72.4\t68.94\t64.56\t58.84\t58.57\t49.2\t54.52\t53.57"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Greater Charles Village/Barclay\t81250\t87500\t115000\t106750\t165000\t194500\t268000\t235000\t197000\t189000\t146000\t146.1\t118.2\t107.46\t86.93\t110.2\t67.98\t84.78\t70.61\t65.19\t71.89\t74.31"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Greater Govans\t56900\t55000\t60000\t63450\t65000\t75000\t115750\t122500\t125000\t105000\t47094\t64.9\t63.7\t44.44\t51.34\t49.87\t47.55\t55.48\t51.69\t39.78\t34.26\t42.22"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Greater Mondawmin\t58900\t52500\t60000\t57500\t61000\t71819\t92000\t90000\t97000\t84300\t34000\t120.5\t121.1\t74.1\t93.86\t81.99\t84.54\t93.76\t80.66\t85.36\t95.91\t112.42"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Greater Roland Park/Poplar Hill\t170000\t212000\t240438\t235000\t239250\t266000\t537500\t311500\t350000\t295000\t380000\t68.8\t54.8\t41.16\t43.24\t33.26\t38.39\t26.2\t27.86\t38.53\t32.99\t32.13"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Greater Rosemont\t50000\t49900\t50034\t54000\t48000\t56600\t76500\t80000\t83500\t55000\t29700\t82.7\t88.7\t71.35\t68.38\t58.74\t58.42\t58.19\t54.44\t57.82\t52.2\t63.5"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Greenmount East\t40000\t44250\t44000\t31500\t31475\t47750\t62500\t69500\t65000\t48000\t12900\t112.9\t87.2\t77.76\t77.42\t73\t53.97\t63.84\t58.65\t52.42\t56.14\t57.37"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Hamilton\t82500\t83250\t85000\t94000\t110000\t150000\t175000\t184500\t183000\t155000\t139175\t68\t63.1\t49.85\t55.31\t61.95\t53.96\t46.05\t45.41\t43.04\t41.93\t40.84"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Harford/Echodale\t85000\t86000\t94900\t101750\t125000\t155000\t185000\t188500\t188000\t169250\t242500\t45.8\t46.8\t45.09\t37.82\t39.01\t42.23\t41.16\t41.4\t45.63\t38.47\t119.29"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Highlandtown\t70000\t90500\t119000\t142280\t189000\t235000\t273000\t228000\t242000\t210000\t154950\t150.9\t148.2\t118.27\t132.7\t105.62\t80.33\t97.59\t101.61\t94.02\t102.5\t41.45"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Howard Park/West Arlington\t71000\t77000\t76522\t75750\t89900\t130000\t175000\t160000\t168000\t109500\t215000\t75.8\t75.9\t63.69\t58.79\t55.97\t50.17\t50.98\t48.26\t52.89\t60.51\t77.52"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Inner Harbor/Federal Hill\t140000\t164000\t180000\t220000\t257250\t299250\t336000\t329000\t300000\t276250\t115000\t200.4\t187.1\t172.13\t138.54\t122.8\t114.97\t114.73\t122.23\t109.34\t101.76\t50.49"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Jonestown/Oldtown\t50500\t56000\t53500\t45000\t60500\t82500\t355784\t300000\t318000\t269352\t275000\t163.2\t164.1\t161.51\t145.37\t110.41\t93.86\t113.09\t92.53\t101.16\t117.41\t165.15"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Lauraville\t79000\t83000\t83950\t95000\t117950\t145000\t183500\t183750\t185000\t167000\t137000\t49.8\t48.1\t49.16\t47.73\t44.43\t35.88\t37.68\t37.45\t43.38\t43.38\t39.6"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Loch Raven\t71000\t72500\t75063\t80000\t92900\t125000\t156773\t165000\t160400\t148500\t134000\t52.1\t50.8\t45.79\t42.65\t46.31\t48.55\t44.77\t41.82\t43.61\t38.99\t34.29"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Madison/East End\t45000\t50000\t50000\t45000\t46284\t53900\t66000\t69250\t60000\t50000\t25000\t112.6\t94.6\t89.93\t73.92\t65.74\t52.64\t57.34\t60.7\t73.13\t64.84\t65.54"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Medfield/Hampden/Woodberry/Remington\t64950\t69000\t79900\t105000\t129999\t166000\t199900\t203000\t182000\t175000\t164950\t73.8\t77.3\t71.4\t68.94\t69.29\t61.07\t60.83\t68.35\t53.85\t51.5\t51.18"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Midtown\t139625\t149728\t210000\t235000\t285000\t168450\t350000\t250000\t293950\t242900\t195000\t228\t183.6\t144.65\t130.71\t123.3\t107.39\t118.54\t119.08\t111.47\t100.86\t92.88"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Midway/Coldstream\t49200\t47500\t45081\t47000\t45000\t52900\t110750\t70000\t95000\t59000\t24500\t94.3\t92\t77.49\t67.57\t75.01\t53.42\t47.97\t54.33\t47.3\t50.69\t66.4"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Morrell Park/Violetville\t59950\t61250\t66000\t69900\t76900\t96000\t135000\t140500\t137800\t129760\t103000\t82\t81.7\t74.16\t72.61\t59.46\t57.91\t64.43\t66.09\t80.02\t62.44\t68.05"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Mount Washington/Coldspring\t113000\t147950\t151500\t200000\t175000\t285000\t355000\t284500\t275000\t293500\t280000\t55.7\t69.4\t32.96\t38.99\t49.05\t35.78\t31.76\t31.76\t33.57\t35.18\t33.09"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "North Baltimore/Guilford/Homeland\t221000\t231500\t251550\t257950\t353000\t394263\t469900\t365000\t311949\t365000\t347500\t57.2\t48.1\t50.8\t29.51\t30.34\t28.86\t30.1\t31.76\t32.11\t29.92\t25.82"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Northwood\t75000\t74000\t76926\t85000\t95000\t125000\t162075\t171000\t164950\t138750\t138000\t56.6\t57.3\t42.04\t45.26\t48.36\t42.34\t47.65\t37.63\t39.95\t33.39\t39.9"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Orangeville/East Highlandtown\t51625\t56000\t58000\t61000\t75000\t121352\t150000\t145000\t145000\t118300\t173750\t116.8\t116.1\t126.96\t87.13\t85.29\t80.34\t112.11\t85.64\t97.72\t88.05\t102.4"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Patterson Park North & East\t56900\t51253\t56000\t65000\t100000\t125000\t209900\t200000\t200000\t159900\t84000\t120.9\t105.3\t82.39\t88.36\t71.49\t59.02\t71.03\t77.27\t77.79\t74.31\t85.86"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Penn North/Reservoir Hill\t49596\t53000\t55000\t65000\t101500\t95000\t128000\t133000\t151000\t50946\t189950\t103.9\t107.6\t93.37\t82.58\t63.59\t73.31\t72.06\t71.97\t72.06\t62.43\t75.68"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Perkins/Middle East\t65000\t52100\t56000\t32000\t55000\t71000\t154500\t97760\t62980\t197075\t44000\t173.2\t144.8\t104.29\t133.71\t116.08\t79.33\t75.4\t78.93\t71.47\t65.64\t64.23"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Pimlico/Arlington/Hilltop\t52500\t49900\t53950\t50000\t49500\t56750\t85750\t85500\t80000\t70000\t48094\t85.3\t79.7\t63.5\t62.84\t60.86\t57.62\t54.68\t53.21\t48.73\t50.35\t58.06"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Poppleton/The Terraces/Hollins Market\t45000\t65000\t55000\t75000\t75000\t94950\t178000\t132500\t125000\t99750\t48000\t130.9\t134\t116.52\t109.25\t81.28\t82.59\t79.42\t75.13\t83.15\t65.06\t80.22"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Sandtown-Winchester/Harlem Park\t46000\t32195\t40000\t57000\t48000\t60000\t83000\t61000\t65000\t25250\t12886\t119.5\t111.9\t68.99\t70.36\t70.82\t65.68\t68.59\t76.25\t63.85\t61.16\t69.48"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "South Baltimore\t84000\t108000\t141000\t150000\t193500\t248533\t318500\t288500\t278000\t248000\t250500\t85.4\t70.9\t88.93\t13.29\t56.79\t61.55\t73.12\t51.35\t66.15\t71.25\t35.55"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Southeastern\t52000\t53500\t61500\t62000\t65550\t85000\t118489\t127000\t133500\t125000\t79000\t133.5\t127.8\t85.65\t87.53\t75.7\t64.46\t76.86\t53.64\t51.62\t53.93\t57.83"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Southern Park Heights\t49900\t45000\t50000\t45000\t39900\t53000\t87000\t81900\t87514\t43400\t21000\t72.1\t65.1\t61.93\t59.2\t57.67\t49.74\t47.97\t46.7\t47.27\t43.08\t59.55"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Southwest Baltimore\t42500\t42546\t44082\t33750\t36000\t52500\t73000\t65000\t83000\t50000\t22500\t123.4\t120.9\t105.99\t87.1\t81.9\t80.13\t70.16\t66.4\t67.73\t60.72\t79.34"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "The Waverlies\t58000\t64450\t59999\t60500\t68250\t80000\t139500\t135000\t134900\t115000\t84950\t116\t106\t73.9\t76.27\t86.51\t78.02\t79.64\t73.4\t66.78\t69.15\t70.55"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Upton/Druid Heights\t44000\t47500\t77750\t88000\t72000\t50000\t178500\t175000\t60000\t80000\t20100\t160.8\t121.9\t96.21\t102.36\t98.33\t87.85\t99.1\t86.02\t83.91\t70.07\t65.22"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Washington Village/ Pigtown\t45000\t50000\t60000\t59450\t66775\t110000\t187000\t146500\t154950\t154000\t70000\t210.7\t188.6\t199.61\t130.15\t140.33\t139.62\t114.19\t111.38\t125.42\t120.86\t123.93"
+	},
+	{
+		"CSA2000\tsalepr00\tsalepr01\tsalepr02\tsalepr03\tsalepr04\tsalepr05\tsalepr06\tsalepr07\tsalepr08\tsalepr09\tsalepr10\tcrime00\tcrime01\tcrime02\tcrime03\tcrime04\tcrime05\tcrime06\tcrime07\tcrime08\tcrime09\tcrime10": "Westport/Mount Winans/Lakeland\t53000\t53000\t54900\t54500\t59500\t67200\t94000\t100000\t99900\t85250\t62250\t121.5\t116.2\t112.96\t93.43\t90.81\t78.76\t83.61\t75.09\t81.9\t79.68\t78.52"
+	}
+]
