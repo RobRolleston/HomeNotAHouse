@@ -1,8 +1,21 @@
 // THIS IS THE ALGORITHM THAT MATCHES AND SORTS BALTIMORE NEIGHBORHOODS ACCORDING TO USER INPUTS
-// Declare Variables
-var neighborhoods = $.getJSON( "CSAdata_sales-crime.json", function() {
-alert( "success" );
-})
+// Get the JSON data about neighborhoods
+$.getJSON( "CSAdata_sales-crime.json", function(data){
+	
+	//Initialize output var
+	var cities = '';
+	
+	//Cycle through the json array to get the city names and load it into the list
+	for(var i = 0; i < data.length; i++)
+	cities += '<li>' + data[i].CSA2000 + '</li>';
+	
+ 	//finally, put it in the html of our list tag
+	$('ul.my-new-list').html(cities);
+
+});
+
+alert(pricevalues.length);
+
 //var housingPrices = an array of price ranges
 //var crimeRates = an array of crime rate ranges
 

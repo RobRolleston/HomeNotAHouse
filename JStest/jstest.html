@@ -3,27 +3,69 @@
 <head>
 <meta charset="utf-8" />
   <title>Algorithm Test</title>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-</head>
-
-<body>
-<h1>Test Page</h1>
-<ul class="my-new-list"></ul>
+<script src="HomeNotaHouse_matchmaker.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 
 <script>
 
-var neighborhoods = $.getJSON( "CSAdata_sales-crime.json", function(data) {
-	var items = [];
-	$.each(data, function(key, val) {
-		items.push('<li id="' + key + '">' + val + '</li>');
-	});
-	$('<ul/>', {
-		'class': 'my-new-list',
-		html: items.join('')
-	}).appendTo('body');
-});
-
+  $(function() {
+	$(".report").hide();	
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 0,
+      max: 500000,
+	  step: 50000,
+      values: [ 100000, 300000 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+      }
+    });
+    	$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+	  
+	   //$( "#slider-range" ).slider({
+		//change: function(event, ui) {	
+        //$(".form input[name='Value']"); 
+   // }
+//});  
+		var pricevalues = $( ".selector" ).slider( "option", "values" );
+		$("#pricebutton").click(function() {	
+		$(".form").hide();
+		$(".report").show();
+	     alert(pricevalues);
+			});
+  });
 </script>
+
+</head>
+
+<body>
+
+<!--FORM START-->
+<div class="form">
+<form action="#" method="get">
+ 
+<p>
+  <label for="amount">Price range:</label>
+  <input type="text" id="amount" name="Value" style="border: 0; color: #f6931f; font-weight: bold;" />
+</p>
+ 
+<div id="slider-range" class="selector"></div>
+<br><br>
+<button type="button" id="pricebutton">Submit</button>
+
+ </form>
+ </div>
+ 
+ <div class="report">This is the report.</div>
+
+<!--TEST PART-->
+<h1>Test Page</h1>
+<ul class="my-new-list"></ul>
+
+
 
 </body>
 </html>
