@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+  <title>Algorithm Test</title>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+</head>
+
+<body>
+<h1>Test Page</h1>
+<ul class="my-new-list"></ul>
+
+<script>
+
+var neighborhoods = $.getJSON( "CSAdata_sales-crime.json", function(data) {
+	var items = [];
+	$.each(data, function(key, val) {
+		items.push('<li id="' + key + '">' + val + '</li>');
+	});
+	$('<ul/>', {
+		'class': 'my-new-list',
+		html: items.join('')
+	}).appendTo('body');
+});
+
+</script>
+
+</body>
+</html>
