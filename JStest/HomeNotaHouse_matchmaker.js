@@ -1,30 +1,25 @@
 // THIS IS THE ALGORITHM THAT MATCHES AND SORTS BALTIMORE NEIGHBORHOODS ACCORDING TO USER INPUTS
-// Get the JSON data about neighborhoods
-$.getJSON( "CSAdata_sales-crime.json", function(data){
-	
-	//Initialize output var
-	var cities = '';
-	
-	//Cycle through the json array to get the city names and load it into the list
-	for(var i = 0; i < data.length; i++)
-	cities += '<li>' + data[i].CSA2000 + '</li>';
-	
- 	//finally, put it in the html of our list tag
-	$('ul.my-new-list').html(cities);
 
+//Global variable for storing the data (can be seen/edited anywhere)
+var csaData = null;
+//Call to read the json data, and on success populate csaData as an actual javascript object of the data
+$.getJSON( "CSAdata_sales-crime.json", function(data){
+	csaData = data;
 });
 
-alert(pricevalues.length);
-
-//var housingPrices = an array of price ranges
-//var crimeRates = an array of crime rate ranges
-
-
-
+// This function is called by the "submit" action in jstest.html
+function findNeighborhood(pricevalues){
+	//Show that we have the selected price value
+	alert(pricevalues);
+	//show that we have access to the data
+	alert(csaData[0].CSA2000 + ': ' + csaData[0].salepr00);
+	$("h1").html(csaData[0].CSA2000 + ': ' + csaData[0].salepr00);
+	//now compare/combine to your heart's content!
+}
 
 /*
 // One big function to run all the matching and scoring
-function  findNeighborhood {
+function  findNeighborhood (pricevalues) {
 	
 	var pricevalues = stores the housing price value selected by the user
 	var crimevalues = stores the crime rate value selected by the user
