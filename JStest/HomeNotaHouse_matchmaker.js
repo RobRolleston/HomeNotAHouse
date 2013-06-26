@@ -7,15 +7,49 @@ $.getJSON( "CSAdata_sales-crime.json", function(data){
 	csaData = data;
 });
 
+
+//var matches = new Array();
+
 // This function is called by the "submit" action in jstest.html
 function findNeighborhood(pricevalues){
-	//Show that we have the selected price value
-	alert(pricevalues);
+
+	// Show that we have the selected price value
+	console.log(pricevalues);
+	
+	// make the findPriceValue function a variable
+	var neighborhoodPrice = findPriceValue();
+	
 	//show that we have access to the data
-	alert(csaData[0].CSA2000 + ': ' + csaData[0].salepr00);
-	$("h1").html(csaData[0].CSA2000 + ': ' + csaData[0].salepr00);
+	$("h1").html(neighborhoodPrice);
 	//now compare/combine to your heart's content!
-}
+
+};
+
+
+// This displays the neighborhood
+function findPriceValue(pricevalues) {
+	
+	var Matches = new Array();
+	// cycle through all neighborhoods
+	for (i = 0; i < csaData.length; i++) {
+		
+		// Get all the median sales prices from all the neighborhoods
+		var medianPrice = csaData[i].salepr10;
+		
+		// Check to see if they fit the price range from user input
+		if ( 0 < medianPrice && medianPrice < 100000 ) {
+			console.log('match made!');
+		} else {
+			console.log('no match!');
+		}
+	
+	}
+
+	return csaData[0].CSA2000 + ': ' + csaData[0].salepr00;
+};
+
+
+
 
 /*
 // One big function to run all the matching and scoring
