@@ -26,7 +26,7 @@
     	$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
       " - $" + $( "#slider-range" ).slider( "values", 1 ) );
 	  
-		var pricevalues = $( ".selector" ).slider( "option", "values" );
+		var pricevalues = $( ".price" ).slider( "option", "values" );
 		
 
 //Get Crime Value//  			
@@ -41,9 +41,10 @@
 
   $(function() {
 	$( "#slider" ).slider({
-	value:1,
+	range: true,
 	min: 0,
 	max: 4,
+	value: 1,
 	step: 1,
 	slide: function( event, ui ) {
 		$( "#crime" ).val(crimesteps[ui.value]);}
@@ -51,14 +52,18 @@
 	
 		$("#crime").val(crimesteps[$("#slider").slider("value")]);
 		
-	});
+		var crimevalues = $( ".crimerate" ).slider( "option", "values" );
+		
+	
+	
 	
 	$("#pricebutton").click(function() {	
 		$(".form").hide();
 		$(".report").show();
-	     alert(pricevalues);
+		 alert(pricevalues);
+	     alert(crimevalues);
 			});	
-	 
+	 });
  
  });
 </script>
@@ -72,7 +77,7 @@
   <label for="amount">Price range:</label>
   <input type="text" id="amount" name="Value" style="border: 0; color: #f6931f; font-weight: bold;" />
 </p>
-<div id="slider-range" class="selector"></div>
+<div id="slider-range" class="price"></div>
  
 <br><br>
 
@@ -80,7 +85,7 @@
 <label for="crime">Crime Comfort Level:</label>
 <input type="text" size="100" id="crime" style="border: 0; color: #f6931f; font-weight: bold;" />
 </p>
-<div id="slider"></div>
+<div id="slider" class="crimerate"></div>
 
 <br><br>
 
