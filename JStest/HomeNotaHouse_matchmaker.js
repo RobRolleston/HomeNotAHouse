@@ -19,8 +19,7 @@ function findNeighborhood(pricevalues){
 	var neighborhoodPrice = findPriceValue(pricevalues);
 	
 	//show that we have access to the data
-	$("ul").html("<li>" + neighborhoodPrice + "</li>");
-	//now compare/combine to your heart's content!
+	$("ul").html(neighborhoodPrice);
 
 };
 
@@ -53,11 +52,18 @@ function findPriceValue(pricevalues) {
 // Displays the sales price of each
 function displayMatches(matchList) {
 	
+	// sets up an empty string to append the indexed matches to
+	var output = "";
+	// cycles through the index in matchList
 	for (i = 0; i < matchList.length; i++) {
-		csaData[matchList[i]].salepr10;
+		var matchNames = csaData[matchList[i]].CSA2000;
+		var matchPrices = csaData[matchList[i]].salepr10;
+		output += "<li>" + matchNames + ": $" + matchPrices + "</li>";
 	}
+	return output;
 	
-	//console.log(csaData[Matches[i]].salepr10)
 }; 
+
+
 
 
