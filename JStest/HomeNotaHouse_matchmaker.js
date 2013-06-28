@@ -10,13 +10,13 @@ $.getJSON( "CSAdata_sales-crime.json", function(data){
 
 
 // This function is called by the "submit" action in jstest.html
-function findNeighborhood(pricevalues){
+function findNeighborhood(pricevalues, crimevalues){
 
 	// Show that we have the selected price value
 	console.log(pricevalues);
 	
 	// make the findPriceValue function a variable
-	var neighborhoodPrice = findPriceValue(pricevalues);
+	var neighborhoodPrice = findPriceValue(pricevalues, crimevalues);
 	
 	//show that we have access to the data
 	$("ul").html(neighborhoodPrice);
@@ -24,20 +24,24 @@ function findNeighborhood(pricevalues){
 };
 
 
-// sets up a new array to put the new matches
-var matchList = new Array();
 
 // This determines if the neighborhood is a match for the inputted price range
-function findPriceValue(pricevalues) {
+function findPriceValue(pricevalues, crimevalues) {
+
+	// sets up a new array to put the new matches
+	var matchList = new Array();
 	
 	// cycle through all neighborhoods
 	for (i = 0; i < csaData.length; i++) {
 		
 		// Get all the median sales prices from all the neighborhoods
 		var medianPrice = csaData[i].salepr10;
+		// Get all the crime rates from all the neighborhoods
+		var crimeRate = csaData[i].crime10;
 		
 		// Check to see if they fit the price range from user input
-		if ( pricevalues[0] < medianPrice && medianPrice < pricevalues[1] ) {
+		if ( pricevalues[0] < medianPrice && medianPrice < pricevalues[1] &&
+		crimevalues[0] < crimeRate && crimeRate < crimevalues[1] ) {
 			matchList.push(i);
 		} else {
 			console.log('no match!');
@@ -49,6 +53,8 @@ function findPriceValue(pricevalues) {
 	return Matches;
 };
 
+// This determines if the neighborhood is a match for the inputted crime rate range
+
 // Displays the sales price of each
 function displayMatches(matchList) {
 	
@@ -58,7 +64,8 @@ function displayMatches(matchList) {
 	for (i = 0; i < matchList.length; i++) {
 		var matchNames = csaData[matchList[i]].CSA2000;
 		var matchPrices = csaData[matchList[i]].salepr10;
-		output += "<li>" + matchNames + ": $" + matchPrices + "</li>";
+		var matchCrime = csaData[matchList[i]].crime10;
+		output += "<li>" + matchNames + "<br/>$" + matchPrices + "<br/>" + matchCrime + " incidents per 1,000 people</li>";
 	}
 	return output;
 	

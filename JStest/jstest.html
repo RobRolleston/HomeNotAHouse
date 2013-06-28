@@ -9,34 +9,63 @@
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 
 <script>
+  
+//Get Price Value//  
 
-  $(function() {
+$(function() {
 	$(".report").hide();	
     $( "#slider-range" ).slider({
       range: true,
       min: 0,
       max: 500000,
-	  step: 50000,
+	  step: 10000,
       values: [ 100000, 300000 ],
       slide: function( event, ui ) {
         $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
       }
     });
-    	$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+    
+    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
       " - $" + $( "#slider-range" ).slider( "values", 1 ) );
 	  
-	   //$( "#slider-range" ).slider({
-		//change: function(event, ui) {	
-        //$(".form input[name='Value']"); 
-   // }
-//});  
-		var pricevalues = $( ".selector" ).slider( "option", "values" );
-		$("#pricebutton").click(function() {	
+		var pricevalues = $( ".price" ).slider( "option", "values" );
+		
+
+//Get Crime Value//  			
+			
+	var crimesteps = [];
+	crimesteps[ 0 ] = "I have six locks on my door!";
+	crimesteps[ 25 ] = "I don't like to walk alone.";
+	crimesteps[ 50 ] = "I don't mind a little character.";
+	crimesteps[ 75 ] = "I have some street skills.";
+	crimesteps[ 100 ] = "I'm used to rough neighborhoods.";
+	crimesteps[ 125 ] = "People should watch out for me!";
+				
+$(function() {
+	$( "#slider" ).slider({
+	range: true,
+	min: 0,
+	max: 125,
+	values: [ 0, 25 ],
+	step: 25,
+	slide: function( event, ui ) {
+		$( "#crime" ).val(crimesteps[ui.value]);}
+	});
+	
+		$("#crime").val(crimesteps[$("#slider").slider("value")]);
+		
+		var crimevalues = $( ".crimerate" ).slider( "option", "values" );
+	
+	$("#pricebutton").click(function() {	
 		$(".form").hide();
 		$(".report").show();
-	     findNeighborhood(pricevalues);
-			});
-  });
+		findNeighborhood(pricevalues, crimevalues);
+	    console.log(crimevalues);
+			});	
+	 });
+ 
+ });
+ 
 </script>
 
 </head>
@@ -51,15 +80,26 @@
   <label for="amount">Price range:</label>
   <input type="text" id="amount" name="Value" style="border: 0; color: #f6931f; font-weight: bold;" />
 </p>
+<div id="slider-range" class="price"></div>
  
-<div id="slider-range" class="selector"></div>
 <br><br>
+
+<p>
+<label for="crime">Crime Comfort Level:</label>
+<input type="text" size="100" id="crime" style="border: 0; color: #f6931f; font-weight: bold;" />
+</p>
+<div id="slider" class="crimerate"></div>
+
+<br><br>
+
 <button type="button" id="pricebutton">Submit</button>
 
- </form>
- </div>
+</form>
+</div>
  
- <div class="report">This is the report.</div>
+<div class="report">This is the report.</div>
+
+
 
 <!--TEST PART-->
 <h1 id="header">Neighborhood Matches</h1>
