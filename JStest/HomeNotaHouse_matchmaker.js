@@ -5,8 +5,15 @@ var csaData = null;
 //Call to read the json data, and on success populate csaData as an actual javascript object of the data
 $.getJSON( "CSAdata_sales-crime.json", function(data){
 	csaData = data;
-});
-
+	 console.log("CSA Data Loaded");
+	
+	// Sort csaData by sale price, ascending order, that way any returned matches will already be sorted
+	csaData.sort(function(a, b) {
+    	return a.salepr10 - b.salepr10;
+	});
+	console.log(csaData[0], csaData[1], csaData[2]);
+	
+}).fail(function() { console.log( "error loading CSA data" ); });
 
 
 // This function is called by the "submit" action in jstest.html

@@ -5,8 +5,8 @@
   <title>Algorithm Test</title>
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-<script src="HomeNotaHouse_matchmaker.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="HomeNotaHouse_matchmaker.js"></script>
 
 <script>
   
@@ -43,8 +43,6 @@ $(function() {
 	crimesteps[ 125 ] = "People should watch out for me!";
 
 	
-	$(function() {
-	
 		// Crime slider attributes
 		$( "#slider" ).slider({
 		range: true,
@@ -65,11 +63,26 @@ $(function() {
 			$(".report").show();
 			findNeighborhood(pricevalues, crimevalues);
 	    	console.log(crimevalues);
+	    	
+	    	// TESTING SORTING CODE
+	    	function numOrdA(a, b){ return (a-b); }
+
+			var Hoods = []
+			Hoods[0] = {CSA2000: "Allendale/Irvington/South Hilton", salepr10: "42500", crime10: "40.57" }
+			Hoods[1] = {CSA2000: "Brooklyn/Curtis Bay/Hawkins Point", salepr10: "58005", crime10: "81.65" }
+			Hoods[2] = {CSA2000: "Beechfield/Ten Hills/West Hills", salepr10: "142250", crime10: "33.59" }
+			Hoods[3] = {CSA2000: "Belair-Edison", salepr10: "56000", crime10: "50.3" }
+
+			var whatEver = [ 5,2,6,7,3,75,22];
+
+			Hoods.sort(function(a, b) {
+    			return a.crime10 - b.crime10;
+			});
+			console.log(Hoods);
+
 		});	
-	 
-	 });
  
- });
+});
  
 </script>
 
