@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-image:url(Development-Landing-Baltimore2.jpg); 
+	background-repeat:no-repeat;
+}
+
+#contentwrapper {
+	margin: 0 auto; 
+	padding-top: 70px;
+}
+
+#content {
+	width: 700px; 
+	height: 400px; 
+	margin: 0px auto; 
+	padding: 20px; 
+	background-color:#000; 
+	opacity:.7; 
+	text-align:center; 
+	font-family:Arial, Helvetica, sans-serif; 
+	color: #fff; 
+	font-weight: bold;
+}
+
+#formwrapper {
+	width: 600px; 
+	margin: 0px auto;
+}
+
+input {
+	border: 0; 
+	color: #f6931f; 
+	background: none; 
+	text-align:center;
+	font-weight:bold;
+}
+

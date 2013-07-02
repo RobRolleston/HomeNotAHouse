@@ -3,88 +3,29 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="jquery-ui.css" rel="stylesheet" />
-<title>Untitled Document</title>
+<link href="mainstyles.css" rel="stylesheet" />
+<title>Home Not A House</title>
  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-
-  <script type="text/javascript">
-  
-//Get Price Value//  
-
-  $(function() {
-	$(".report").hide();	
-    $( "#slider-range" ).slider({
-      range: true,
-      min: 0,
-      max: 500000,
-	  step: 50000,
-      values: [ 100000, 300000 ],
-      slide: function( event, ui ) {
-        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-      }
-    });
-    	$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-	  
-		var pricevalues = $( ".price" ).slider( "option", "values" );
-		
-
-//Get Crime Value//  			
-			
-	var crimesteps = [];
-	crimesteps[ 0 ] = "People should watch out for me!";
-	crimesteps[ 1 ] = "I'm used to rough neighborhoods.";
-	crimesteps[ 2 ] = "I have some street skills.";
-	crimesteps[ 3 ] = "I don't mind a little character.";
-	crimesteps[ 4 ] = "I have six locks on my door!"
-				
-
-  $(function() {
-	$( "#slider" ).slider({
-	range: true,
-	min: 0,
-	max: 4,
-	value: 1,
-	step: 1,
-	slide: function( event, ui ) {
-		$( "#crime" ).val(crimesteps[ui.value]);}
-	});
-	
-		$("#crime").val(crimesteps[$("#slider").slider("value")]);
-		
-		var crimevalues = $( ".crimerate" ).slider( "option", "values" );
-		
-	
-	
-	
-	$("#pricebutton").click(function() {	
-		$(".form").hide();
-		$(".report").show();
-		 alert(pricevalues);
-	     alert(crimevalues);
-			});	
-	 });
- 
- });
-</script>
+  <script src="slider.js" language="javascript"></script>
 </head>
 
-<body style="background-image:url(Development-Landing-Baltimore2.jpg); background-repeat:no-repeat;" >
-<div id="contentwrapper" style="margin: 0 auto; padding-top: 70px;">
-<div style="width: 700px; height: 400px; margin: 0px auto; padding: 20px; background-color:#000; opacity:.7; text-align:center; font-family:Arial, Helvetica, sans-serif; color: #fff; font-weight: bold;">
+<body>
+<div id="contentwrapper">
+<div id="content">
 <h2>Let's find your new neighborhood.</h2><br />
 
 
 
 <!--Form Beginning-->
-<div style="width: 600px; margin: 0px auto;">
+<div id="formwrapper">
 <div class="form">
 <form action="#" method="get">
  
 <p>
   <label for="amount">Price range:</label><br />
 
-  <input type="text" id="amount" name="Value" style="border: 0; color: #f6931f; font-weight: bold; background: none; text-align:center;" />
+  <input type="text" id="amount" name="Value" />
 </p>
 <div id="slider-range" class="price"></div>
  
@@ -92,7 +33,7 @@
 
 <p>
 <label for="crime">Crime Comfort Level:</label><br />
-<input type="text" size="60" id="crime" style="border: 0; color: #f6931f; font-weight: bold;  background: none; text-align:center;" />
+<input type="text" size="60" id="crime" />
 </p>
 <div id="slider" class="crimerate"></div>
 
