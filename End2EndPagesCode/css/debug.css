@@ -2,7 +2,7 @@
 /* CSS Document */
 /* Add colro & dotted lines to divs to see what is where */
 
-* {border:dashed red thin;}
+* {outline:dashed red thin;}
 body { background: #4E5869;}
 #container {background:rgba(255,204,255,1);}
 header {background-color: #6F7D94;}
@@ -12,8 +12,8 @@ nav {background-color:rgba(153,255,51,1);}
 footer {background-color: #FFF;}
 
 
-#tabs .tabs-spacer {  border:medium green dotted;}
-.tabs-bottom {border:medium white dotted};
+#tabs .tabs-spacer {  outline:medium green dotted;}
+.tabs-bottom {outline:medium white dotted};
 .tabContainer .name {background-color:#eee;}
 .tabContainer .slideShow {background-color:#ccc;}
 .tabContainer .crimeRate {background-color:#aaa;}
