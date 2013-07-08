@@ -3,7 +3,7 @@ console.log("matchmaker.js is on!");
 //Global variable for storing the data (can be seen/edited anywhere)
 var csaData = null;
 //Call to read the json data, and on success populate csaData as an actual javascript object of the data
-$.getJSON( "scripts/CSAdata_sales-crime.json", function(data){
+$.getJSON( "data/CSAdata_sales-crime.json", function(data){
 	csaData = data;
 	 console.log("CSA Data Loaded");
 	
