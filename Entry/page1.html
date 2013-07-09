@@ -5,47 +5,46 @@
 <link href="jquery-ui.css" rel="stylesheet" />
 <link href="mainstyles.css" rel="stylesheet" />
 <title>Home Not A House</title>
- <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-  <script src="slider.js" language="javascript"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  	<script src="slider.js" language="javascript"></script>
 </head>
 
 <body>
 <div id="contentwrapper">
-<div id="content">
-<h2>Let's find your new neighborhood.</h2><br />
-
-
+	<div id="content">
+		<h2>Let's find your new neighborhood.</h2><br />
 
 <!--Form Beginning-->
-<div id="formwrapper">
-<div class="form">
-<form action="#" method="get">
+		<div id="formwrapper">
+			<div class="form">
+				<form action="#" method="get">
  
-<p>
-  <label for="amount">Price range:</label><br />
+				<p>
+  					<label for="amount">Price range:</label><br />
+  					<input type="text" id="amount" name="Value" />
+				</p>
 
-  <input type="text" id="amount" name="Value" />
-</p>
-<div id="slider-range" class="price"></div>
+				<div id="price-range" class="price"></div>
  
-<br><br>
+				<br><br>
 
-<p>
-<label for="crime">Crime Comfort Level:</label><br />
-<input type="text" size="60" id="crime" />
-</p>
-<div id="slider" class="crimerate"></div>
+				<p>
+					<label for="crime">Crime Comfort Level:</label><br />
+					<input type="text" size="60" id="crime" />
+				</p>
+				
+                <div id="crime-range" class="crimerate"></div>
 
-<br><br>
+				<br><br>
 
-<button type="button" id="pricebutton">Submit</button>
+					<button type="button" id="pricebutton">Submit</button>
 
- </form>
- </div>
-  </div>
+			 </form>
+ 			</div>
+  		</div>
 <!--Form End-->
-</div>
+	</div>
 </div>
 </body>
 </html>

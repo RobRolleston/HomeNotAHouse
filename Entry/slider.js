@@ -1,9 +1,9 @@
 // JavaScript Document
 
 //Get Price Value//  
- $(function() {
+$(function() {
 	$(".report").hide();	
-    $( "#slider-range" ).slider({
+    $( "#price-range" ).slider({
       range: true,
       min: 0,
       max: 500000,
@@ -13,11 +13,10 @@
         $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
       }
     });
-    	$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+	
+    $( "#amount" ).val( "$" + $( "#price-range" ).slider( "values", 0 ) + " - $" + $( "#price-range" ).slider( "values", 1 ) );
 	  
-		var pricevalues = $( ".price" ).slider( "option", "values" );
-		
+				
 
 //Get Crime Value//  						
 	var crimesteps = [];
@@ -28,30 +27,28 @@
 	crimesteps[ 4 ] = "I have six locks on my door!"
 				
 
-  $(function() {
-	$( "#slider" ).slider({
-	range: true,
+
+	$( "#crime-range" ).slider({
+	range: false,
 	min: 0,
 	max: 4,
 	value: 1,
 	step: 1,
 	slide: function( event, ui ) {
-		$( "#crime" ).val(crimesteps[ui.value]);}
+		$( "#crime" ).val(crimesteps[ui.value]);
+	}
 	});
 	
-		$("#crime").val(crimesteps[$("#slider").slider("value")]);
-		
-		var crimevalues = $( ".crimerate" ).slider( "option", "values" );
+		$("#crime").val(crimesteps[$("#crime-range").slider("value")]);
 		
 	
-	
-	
-	$("#pricebutton").click(function() {	
+	$("#pricebutton").click(function() {
+		var pricevalues = $( ".price" ).slider( "option", "values" );
+		var crimevalues = $( ".crimerate" ).slider( "value" );	
 		$(".form").hide();
 		$(".report").show();
-		 alert(pricevalues);
-	     alert(crimevalues);
-			});	
-	 });
+		console.log(pricevalues);
+	    console.log(crimevalues);
+	});	
+});
  
- });
