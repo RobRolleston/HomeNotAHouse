@@ -72,7 +72,7 @@ list-style-type:none;
 float:left;
 width: 270px; /*6em;*/
 text-decoration:none;
-color:black;
+color:white;
 opacity: .9;
 /*background-color:#999999;*/
 padding:0.2em 0.6em;
@@ -107,6 +107,9 @@ a.tabOn {
 a.tabOff {
 	color: #000;
 	background-color: #222;
+}
+#rptTabs h4 {
+	color: #FFF;
 }
 	
 /***************/
