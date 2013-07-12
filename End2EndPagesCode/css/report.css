@@ -6,12 +6,14 @@
 */
 
 
-.tabContainer {
+.rptContainer {
 	height: 500px;
 	position:relative;
+	background-color:#000;
+	opacity: .9
 }
 
-.tabContainer .name {
+.rptContainer .name {
 	position: absolute;
 	width: 100%;
 	height: 50px;
@@ -20,7 +22,7 @@
 	text-align:center;
 }
 
-.tabContainer .slideShow {
+.rptContainer .slideShow {
 	position: absolute;
 	width: 100%;
 	height: 200px;
@@ -28,55 +30,106 @@
 	top: 60px;
 }
 
-.tabContainer .crimeRate {
+.rptContainer .crimeRate {
 	position: absolute;
 	width: 200px;
 	height: 50px;
 	left: 20px;
 	top: 310px;
 }
-.tabContainer .homevalues {
+.rptContainer .homevalues {
 	position: absolute;
 	width: 200px;
 	height: 70px;
 	left: 20px;
 	top: 390px;
 }
-.tabContainer .map {
+.rptContainer .map {
 	position: absolute;
 	width: 150px;
 	height: 150px;
 	left: 300px;
 	top: 310px;
 }
-.tabContainer .description {
+.rptContainer .description {
 	position: absolute;
 	width: 450px;
 	height: 150px;
 	right: 20px;
 	top: 310px;
 }
+
+#rptTabs ul
+{
+float:left;
+width:990px;
+padding:0;
+margin:0;
+list-style-type:none;
+}
+#rptTabs a
+{
+float:left;
+width: 270px; /*6em;*/
+text-decoration:none;
+color:black;
+opacity: .9;
+/*background-color:#999999;*/
+padding:0.2em 0.6em;
+/*border-right:1px solid white;*/
+text-align:center;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+#rptTabs a:hover {
+	background-color:#000;
+	color: #FFF;
+	}
+#rptTabs li {
+	display:inline;	
+	}
+#rptTabs a.tabLft {
+	color: #FFF;
+	margin-left: 0px;
+	}
+#rptTabs a.tabCnt {
+	margin-left: 60px;
+	margin-right: 60px;
+	}
+#rptTabs a.tabRht {
+	float:right;
+	margin-right: 0px;
+	}
+a.tabOn {
+	color: #FFF;
+	background-color: #000;
+}
+a.tabOff {
+	color: #000;
+	background-color: #222;
+}
+	
 /***************/
 /* these are temporary to show placements */
-.tabContainer h2,h3 {
+.rptContainer h2,h3 {
 	margin: 0 auto;
 	text-align:center;
 	border:dashed white thin;
 	/* this should be reconciled with the tab styles */
 	color: white;
 }
-.tabContainer .slideShow h3 {
+.rptContainer .slideShow h3 {
 	line-height: 190px;
 }
-.tabContainer .crimeRate h3 {
+.rptContainer .crimeRate h3 {
 	line-height: 50px;
 }
-.tabContainer .homevalues h3 {
+.rptContainer .homevalues h3 {
 	line-height: 70px;
 }
-.tabContainer .map h3 {
+.rptContainer .map h3 {
 	line-height: 150px;
 }
-.tabContainer .description h3 {
+.rptContainer .description h3 {
 	line-height: 150px;
 }

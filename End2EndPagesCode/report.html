@@ -2,14 +2,14 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>report_07-08g(report)</title>
+<title>report_07-11(report)</title>
 
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
 <link rel="stylesheet" type="text/css" href="css/report.css"/>
 <link rel="stylesheet" type="text/css" href="css/themes/vader/jquery-ui.css" />
 <link rel="stylesheet" type="text/css" href="css/themes/vader/jquery.ui.theme.css" />
 <!--Include this debug.css to more easily see what divs are where-->
-<link rel="stylesheet" type="text/css" href="css/debug.css"/>
+<!--<link rel="stylesheet" type="text/css" href="css/debug.css"/>-->
 
 <script language="javascript" src="scripts/libs/jquery-2.0.3.min.js" ></script>
 <script language="javascript" src="scripts/libs/jquery.ui.core.js"></script>
@@ -53,42 +53,26 @@
 
 <div id="bodyContent">
 <div class="content">
-   <div id="tabs" class="tabs-bottom">
-    <ul>
-      <li><a href="#tabs-1">Federal Hill</a></li>
-      <li><a href="#tabs-2">Washington Village</a></li>
-      <li><a href="#tabs-3">Fells Point</a></li>
-    </ul>
+   <div id="rptTabs">
     
-    <!-- this tabs-spacer may not be needed, because the height of the tabContianer is fixed
-    <!--<div class="tabs-spacer"></div>-->
-    
-    <div id="tabs-1" class="tabContainer">
+    <div class="rptContainer">
       <div class="name"><h2>Federal Hill</h2></div>
       <div class="slideShow"><h3>Image roll</h3></div>
       <div class="crimeRate"><h3>Crime rate</h3></div>
       <div class="homevalues"><h3>Home values</h3></div>
       <div class="map"><h3>Map</h3></div>
       <div class="description"><h3>Description</h3></div>
-    <!-- end #tabs-1 --></div>
-    <div id="tabs-2" class="tabContainer">
-      <div class="name"><h2>Washington Village</h2></div>
-      <div class="slideShow"><h3>Image roll</h3></div>
-      <div class="crimeRate"><h3>Crime rate</h3></div>
-      <div class="homevalues"><h3>Home values</h3></div>
-      <div class="map"><h3>Map</h3></div>
-      <div class="description"><h3>Description</h3></div>
-    <!-- end #tabs21 --></div>
-    <div id="tabs-3" class="tabContainer">
-      <div class="name"><h2>Fels Point</h2></div>
-      <div class="slideShow"><h3>Image roll</h3></div>
-      <div class="crimeRate"><h3>Crime rate</h3></div>
-      <div class="homevalues"><h3>Home values</h3></div>
-      <div class="map"><h3>Map</h3></div>
-      <div class="description"><h3>Description</h3></div>
-    <!-- end #tabs-3 --></div>
+    </div>
+    
+	<div>
+      <ul>
+        <li><a class="tabLft tabOn" href="#"><h4>Federal Hill</h4></a></li>
+        <li><a class="tabCnt tabOff" href="#"><h4>Washington Village</h4></a></li>
+        <li><a class="tabRht tabOff" href="#"><h4>Fells Point</h4></a></li>
+      </ul>
+    </div>
 
-    <!-- end #tabs --></div>
+    <!-- end #rptTabs --></div>
 <!-- end .content --></div>
 
 <nav>
