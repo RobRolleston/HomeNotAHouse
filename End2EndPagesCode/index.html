@@ -1,48 +1,74 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>report_07-11(Landing)</title>
+  <meta charset="utf-8">
+  <title>report_07-11(Landing)</title>
 
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
-<link rel="stylesheet" type="text/css" href="css/landing.css"/>
-<!--Include this debug.css to more easily see what divs are where-->
-<link rel="stylesheet" type="text/css" href="css/debug.css"/>
-<!--Javascript Libraries-->
-<script src="scripts/libs/jquery-2.0.3.min.js"></script>
-<script src="scripts/libs/jquery-ui.js"></script>
-<!--Matching Algorithm-->
-<script src="scripts/matchmaker.js"></script>
-
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="css/landing.css"/>
+  <link rel="stylesheet" type="text/css" href="css/themes/vader/jquery-ui.css"/>
+  <!--Include this debug.css to more easily see what divs are where-->
+  <!--<link rel="stylesheet" type="text/css" href="css/debug.css"/>-->
+  
+  <!--Javascript Libraries-->
+  <script src="scripts/libs/jquery-2.0.3.min.js"></script>
+  <script src="scripts/libs/jquery-ui.js"></script>
+  <!--Matching Algorithm-->
+  <script src="scripts/matchmaker.js"></script>
+  <!-- Slider -->
+  <script src="scripts/slider.js" language="javascript"></script>
 </head>
 
 <body>
-<div id="container">
+  <div id="container">
 
-<header id="header" >
-  <img id="headerLogo" src="images/logo.png" alt="Insert Logo Here" name="Logo" />
-  <div id="headerText"><h1>Home not a House</h1></div>
-<div class="clearfloat"></div> 
-<!-- end .header --></header>
+    <header id="header" >
+      <img id="headerLogo" src="images/logo.png" alt="Insert Logo Here" name="Logo" />
+      <div id="headerText"><h1>Home not a House</h1></div>
+    <div class="clearfloat"></div> 
+    </header><!-- end .header -->
 
-<div id="bodyContent">
-  <div class="content">
-  	<div class="selectors"><h3>Place selectors here</h3></div>
-  <!-- end .content --></div>
-  
-  <nav>
-      <button type="button" name="returnBtn" class="navButton"> 
-          <a href="report.html">Generate Report</a>
-      </button>
-   </nav>
-<!-- end #bodyConent -->
+    <div id="contentwrapper">
+      <div class="content" id="content">
+        <h2>Let's find your new neighborhood.</h2><br />
 
-<footer id="footer">
-  <p>  
-  <a href="http://www.livebaltimore.com">About</a> -- modal pop-up to who we are 
-  </p>
-<!-- end footer --></footer>
+        <!--Form Beginning-->
+        <div id="formwrapper">
+          <div class="form">
+            <form action="#" method="get"> 
+              <p>
+                  <label for="amount">Price range:</label><br />
+                  <input type="text" id="amount" name="Value" />
+              </p>
+              <div id="price-range" class="price"></div>     
+              <br><br>
 
-<!-- end #container --></div>
+              <p>
+                <label for="crime">Crime Comfort Level:</label><br />
+                <input type="text" size="60" id="crime" />
+              </p>              
+              <div id="crime-range" class="crimerate"></div>
+              <br><br>
+
+              <nav>
+                <button type="button" name="returnBtn" class="navButton"> 
+                  <a href="report.html">Find!</a>
+                </button>
+              </nav>
+
+           </form>
+          </div> <!--end .form-->
+        </div> <!-- end #formwrapper-->
+        <!--Form End-->
+      </div> <!-- end .content -->
+    </div> <!-- end #contentwrapper -->
+
+    <footer id="footer">
+      <p>  
+      <a href="http://www.livebaltimore.com">About</a> -- modal pop-up to who we are 
+      </p>
+    </footer><!-- end footer -->
+
+  </div><!-- end #container -->
 </body>
 </html>
