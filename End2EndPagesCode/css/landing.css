@@ -6,18 +6,6 @@
 */
 
 /* this are temporary to show placements */
-.content .selectors {
-	margin: 0 auto;
-	height: 600px;
-	background-color: #FF0;
-	border:dashed white thin;
-}
-.content .selectors h3 {
-	line-height: 600px;
-	text-align:center;
-	color: blue;
-}
-
 #contentwrapper {
 	margin: 0 auto; 
 	padding-top: 70px;
@@ -47,6 +35,10 @@ input {
 	background: none; 
 	text-align:center;
 	font-weight:bold;
+}
+
+.ui-slider-handle {
+	cursor: pointer;
 }
 
 
