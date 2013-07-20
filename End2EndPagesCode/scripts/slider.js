@@ -19,21 +19,30 @@ $(function() {
 				
 
 //Get Crime Value//  						
+//	var crimesteps = [];
+//	crimesteps[ 0 ] = "People should watch out for me!";
+//	crimesteps[ 1 ] = "I'm used to rough neighborhoods.";
+//	crimesteps[ 2 ] = "I have some street skills.";
+//	crimesteps[ 3 ] = "I don't mind a little character.";
+//	crimesteps[ 4 ] = "I have six locks on my door!"
+	
+	// These correspond directly to the crimerate. A higher number corresponds to a higher crime rate.
 	var crimesteps = [];
-	crimesteps[ 0 ] = "People should watch out for me!";
-	crimesteps[ 1 ] = "I'm used to rough neighborhoods.";
-	crimesteps[ 2 ] = "I have some street skills.";
-	crimesteps[ 3 ] = "I don't mind a little character.";
-	crimesteps[ 4 ] = "I have six locks on my door!"
+	crimesteps[ 0 ] = "I have six locks on my door!";
+	crimesteps[ 25 ] = "I don't like to walk alone.";
+	crimesteps[ 50 ] = "I don't mind a little character.";
+	crimesteps[ 75 ] = "I have some street skills.";
+	crimesteps[ 100 ] = "I'm used to rough neighborhoods.";
+	crimesteps[ 125 ] = "People should watch out for me!";
 				
 
 
 	$( "#crime-range" ).slider({
 	range: false,
 	min: 0,
-	max: 4,
+	max: 125,
 	value: 1,
-	step: 1,
+	step: 25,
 	slide: function( event, ui ) {
 		$( "#crime" ).val(crimesteps[ui.value]);
 	}
