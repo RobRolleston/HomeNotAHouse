@@ -11,7 +11,7 @@ $.getJSON( "data/CSAdata_sales-crime.json", function(data){
 	csaData.sort(function(a, b) {
     	return a.salepr10 - b.salepr10;
 	});
-	console.log(csaData[0], csaData[1], csaData[2]);
+	//console.log(csaData[0], csaData[1], csaData[2]);
 	
 }).fail(function() { console.log( "error loading CSA data" ); });
 
@@ -47,8 +47,8 @@ function findPriceValue(pricevalues, crimevalues) {
 		var crimeRate = csaData[i].crime10;
 		
 		// Check to see if they fit the price range from user input
-		if ( pricevalues[0] < medianPrice && medianPrice < pricevalues[1] &&
-		crimevalues[0] < crimeRate && crimeRate < crimevalues[1] ) {
+		if ( pricevalues[0] < medianPrice && medianPrice < pricevalues[1]
+		&& crimeRate < crimevalues ) {
 			matchList.push(i);
 		} else {
 			console.log('no match!');
@@ -68,7 +68,7 @@ function displayMatches(matchList) {
 	// sets up an empty string to append the indexed matches to
 	var output = "";
 	// cycles through the index in matchList
-	for (i = 0; i < matchList.length; i++) {
+	for (i = 0; i < 3; i++) {
 		var matchNames = csaData[matchList[i]].CSA2000;
 		var matchPrices = csaData[matchList[i]].salepr10;
 		var matchCrime = csaData[matchList[i]].crime10;
