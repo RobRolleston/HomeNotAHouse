@@ -54,12 +54,13 @@ $(function() {
 	$("#findbutton").click(function() {
 		var pricevalues = $( ".price" ).slider( "option", "values" );
 		var crimevalues = $( ".crimerate" ).slider( "value" );
-		findNeighborhood(pricevalues, crimevalues);	
-		$(".form").hide();
-		$(".report").show();
-		console.log(pricevalues);
-	    console.log(crimevalues);
-		console.log("find button works");
+		if (findNeighborhood(pricevalues, crimevalues)) {
+			$(".form").hide();
+			$(".report").show();
+			console.log(pricevalues);
+	    	console.log(crimevalues);
+			console.log("find button works");
+		}
 	});	
 });
  

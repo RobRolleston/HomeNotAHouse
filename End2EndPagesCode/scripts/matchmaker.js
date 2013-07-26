@@ -18,6 +18,7 @@ $.getJSON( "data/CSAdata_sales-crime.json", function(data){
 
 // This function is called by the "submit" action in jstest.html
 function findNeighborhood(pricevalues, crimevalues){
+	var result;
 
 	// Show that we have the selected price value
 	//console.log(pricevalues);
@@ -26,7 +27,15 @@ function findNeighborhood(pricevalues, crimevalues){
 	var neighborhoodPrice = findPriceValue(pricevalues, crimevalues);
 	
 	//show that we have access to the data
-	$("ul").html(neighborhoodPrice);
+	if (neighborhoodPrice == "") {
+		window.alert("no match!");
+		result = false;
+	}
+	else {
+		$("ul").html(neighborhoodPrice);
+		result = true
+	}
+	return result;
 
 };
 
@@ -52,6 +61,7 @@ function findPriceValue(pricevalues, crimevalues) {
 			matchList.push(i);
 		} else {
 			console.log('no match!');
+
 		}
 	
 	}
