@@ -20,7 +20,7 @@ $.getJSON( "data/CSAdata_sales-crime.json", function(data){
 function findNeighborhood(pricevalues, crimevalues){
 
 	// Show that we have the selected price value
-	console.log(pricevalues);
+	//console.log(pricevalues);
 	
 	// make the findPriceValue function a variable
 	var neighborhoodPrice = findPriceValue(pricevalues, crimevalues);
@@ -68,11 +68,12 @@ function displayMatches(matchList) {
 	// sets up an empty string to append the indexed matches to
 	var output = "";
 	// cycles through the index in matchList
-	for (i = 0; i < 3; i++) {
+	for (i = 0; i < matchList.length; i++) {
 		var matchNames = csaData[matchList[i]].CSA2000;
 		var matchPrices = csaData[matchList[i]].salepr10;
 		var matchCrime = csaData[matchList[i]].crime10;
-		output += "<li>" + matchNames + "<br/>$" + matchPrices + "<br/>" + matchCrime + " incidents per 1,000 people</li>";
+		var matchDescription = csaData[matchList[i]].description;
+		output += "<li>" + matchNames + "<br/>$" + matchPrices + "<br/>" + matchCrime + " incidents per 1,000 people<br/>" + matchDescription + "</li>";
 	}
 	return output;
 	
