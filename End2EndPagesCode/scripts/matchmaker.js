@@ -19,23 +19,28 @@ $.getJSON( "data/CSAdata_sales-crime.json", function(data){
 // This function is called by the "submit" action in jstest.html
 function findNeighborhood(pricevalues, crimevalues){
 	var result;
+	var matchList = new Array();
+	var matchString = null;
 
 	// Show that we have the selected price value
 	//console.log(pricevalues);
 	
 	// make the findPriceValue function a variable
-	var neighborhoodPrice = findPriceValue(pricevalues, crimevalues);
+	//var neighborhoodPrice = findPriceValue(pricevalues, crimevalues);
+	var matches = findPriceValue(pricevalues, crimevalues);
 	
 	//show that we have access to the data
-	if (neighborhoodPrice == "") {
+	if (matches.matchList.length == 0 ) {
 		window.alert("no match!");
 		result = false;
 	}
 	else {
-		$("ul").html(neighborhoodPrice);
+		var matchString = displayMatches(matches.matchList);
+		$("ul").html(matchString);
 		result = true
 	}
-	return result;
+	//return result;
+	return matches;
 
 };
 
@@ -56,18 +61,20 @@ function findPriceValue(pricevalues, crimevalues) {
 		var crimeRate = csaData[i].crime10;
 		
 		// Check to see if they fit the price range from user input
-		if ( pricevalues[0] < medianPrice && medianPrice < pricevalues[1]
-		&& crimeRate < crimevalues ) {
+		if ( (pricevalues[0] < medianPrice && medianPrice < pricevalues[1]) && 
+		     (crimeRate < crimevalues) ) 
+		    {
 			matchList.push(i);
-		} else {
+			} 
+	   else {
 			console.log('no match!');
-
-		}
+			}
 	
 	}
 	
 	var Matches = displayMatches(matchList);
-	return Matches;
+	//return Matches;
+	return {matchList:matchList, matchString:Matches};
 };
 
 // This determines if the neighborhood is a match for the inputted crime rate range

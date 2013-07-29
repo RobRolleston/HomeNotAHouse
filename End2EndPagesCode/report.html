@@ -11,37 +11,14 @@
 <!--Include this debug.css to more easily see what divs are where-->
 <!--<link rel="stylesheet" type="text/css" href="css/debug.css"/>-->
 
-<script language="javascript" src="scripts/libs/jquery-2.0.3.min.js" ></script>
-<script language="javascript" src="scripts/libs/jquery.ui.core.js"></script>
-<script language="javascript" src="scripts/libs/jquery.ui.widget.js"></script>
-<script language="javascript" src="scripts/libs/jquery.ui.tabs.js"></script>
-<!--Matching Algorithm-->
-<script src="scripts/matchmaker.js"></script>
-<script>
-	$(function() {
-	$( "#tabs" ).tabs();
-	// fix the classes
-	$( ".tabs-bottom .ui-tabs-nav, .tabs-bottom .ui-tabs-nav > *" )
-	.removeClass( "ui-corner-all ui-corner-top" )
-	.addClass( "ui-corner-bottom" );
-	// move the nav to the bottom
-	$( ".tabs-bottom .ui-tabs-nav" ).appendTo( ".tabs-bottom" );
-	
-	// Added this from UI API  http://api.jqueryui.com/tabs/ 
-	// Did not seem to do anything; is this only for top tabs?
-	// The height of the tab area is controlled by the .tabs-spacer div
-	//$( "#tabs" ).tabs({ heightStyle: "fill" });
-	});
-	</script>
-<style>
-  /* force a height so the tabs don't jump as content height changes */
-  #tabs .tabs-spacer { float: left; height: 200px;}
-  /*.tabs-bottom {border:medium white dotted};*/
-  .tabs-bottom .ui-tabs-nav { clear: left; padding: 0 .2em .2em .2em; };
-  .tabs-bottom .ui-tabs-nav li { top: auto; bottom: 0; margin: 0 .2em 1px 0; border-bottom: auto; border-top: 0; };
-  /*.tabs-bottom .ui-tabs-nav li a {font-size:10pt !important;}*/
-  .tabs-bottom .ui-tabs-nav li.ui-tabs-active { margin-top: -1px; padding-top: 1px; };
-</style>
+<script src="scripts/libs/jquery-2.0.3.min.js" ></script>
+<script src="scripts/libs/jquery.ui.core.js"></script>
+<script src="scripts/libs/jquery.ui.widget.js"></script>
+<script src="scripts/libs/jquery.ui.tabs.js"></script>
+<!--Matching Algorithm  --  Using it to load the json file into csaData Oject 
+<script src="scripts/matchmaker.js"></script>-->
+<script src="scripts/report.js"></script>
+
 </head>
 
 <body>

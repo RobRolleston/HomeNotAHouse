@@ -51,16 +51,34 @@ $(function() {
 		$("#crime").val(crimesteps[$("#crime-range").slider("value")]);
 		
 	
-	$("#findbutton").click(function() {
+	$("#findbuttonSamePage").click(function() {
+		//var matches = new Array();
 		var pricevalues = $( ".price" ).slider( "option", "values" );
 		var crimevalues = $( ".crimerate" ).slider( "value" );
-		if (findNeighborhood(pricevalues, crimevalues)) {
+		matches = findNeighborhood(pricevalues, crimevalues);
+		if (matches.matchString.length != "") {
 			$(".form").hide();
 			$(".report").show();
-			console.log(pricevalues);
-	    	console.log(crimevalues);
-			console.log("find button works");
+			console.log("Selected Price values: " + pricevalues);
+	    	console.log("Selected Crime value: " + crimevalues);
+			console.log("find button works, found " + matches.matchList.length );
+			//var myURL = "report.html#" + matchList[0] + "," + matchList[1] + "," + matchList[2];
+			//window.location.assign(myURL);
 		}
 	});	
+	$("#findbuttonNewPage").click(function() {
+		//var matches = new Array();
+		var pricevalues = $( ".price" ).slider( "option", "values" );
+		var crimevalues = $( ".crimerate" ).slider( "value" );
+		matches = findNeighborhood(pricevalues, crimevalues);
+		matchList = matches.matchList;
+	    if (matches.matchList.length != 0) {
+			console.log("Selected Price values: " + pricevalues);
+	    	console.log("Selected Crime value: " + crimevalues);
+			console.log("find button works, found " + matchList.length );
+			var myURL = "report.html#" + matchList[0] + "," + matchList[1] + "," + matchList[2];
+			window.location.assign(myURL);
+		}
+	});
 });
  
