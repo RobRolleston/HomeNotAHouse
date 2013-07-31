@@ -19,18 +19,20 @@
   <!-- Slider -->
   <script src="scripts/slider.js"></script>
   <!-- SlideShow -->
-  <!--<script src="scripts/slideshow.js"></script>-->
+  <script src="scripts/slideshow.js"></script>
 </head>
 
 <body>
+  
   <div id="container">
-    <div id="slideshow"></div>
+    <div class="slideshow"></div>
     <header id="header" >
       <img id="headerLogo" src="images/logo.png" alt="Insert Logo Here" name="Logo" />
       <div id="headerText"><h3>A Project by MICA InfoViz MPS</h3></div>
-    <div class="clearfloat"></div> 
+    <!--<div class="clearfloat"></div> -->
     </header><!-- end .header -->
-
+    <!--Extra div to make #contentwrapper sit in middle of page-->
+    <div class="floater"></div>
     <div id="contentwrapper">
       <div id="content">
         <h2>Let's find your new neighborhood.</h2><br />
@@ -84,7 +86,7 @@
         
         </div> <!-- end #formwrapper-->
         <!--Form End-->
-      </div> <!-- end .content -->
+      </div> <!-- end #content -->
     </div> <!-- end #contentwrapper -->
 
     <footer id="footer">
