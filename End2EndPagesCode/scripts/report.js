@@ -13,8 +13,10 @@ function parseCache () {
 			//  Howe get the JSON file to load before doing this... ?
 			console.log("Neighborhood #: " + matchList[i] );
 		}
-		var tabId = "#tab"+i+"Label";
+		var tabId = "#tabHeader_"+(i+1);
 		$(tabId).html(csaData[matchList[i]].CSA2000); 
+		var pageId = "#tabpage_"+(i+1);
+		$(pageId+">.name").html(csaData[matchList[i]].CSA2000);
 	};
 };
 	

@@ -14,9 +14,9 @@ footer {background-color: #FFF;}
 
 #tabs .tabs-spacer {  outline:medium green dotted;}
 .tabs-bottom {outline:medium white dotted};
-.rptContainer .name {background-color:#eee;}
-.rptContainer .slideShow {background-color:#ccc;}
-.rptContainer .crimeRate {background-color:#aaa;}
-.rptContainer .homevalues {background-color: #999;}
-.rptContainer .map {background-color: #777;}
-.rptContainer .description {background-color: #777;}
+.tabscontent .name {background-color:#eee;}
+.tabscontent .slideShow {background-color:#ccc;}
+.tabscontent .crimeRate {background-color:#aaa;}
+.tabscontent .homevalues {background-color: #999;}
+.tabscontent .map {background-color: #777;}
+.tabscontent .description {background-color: #777;}
