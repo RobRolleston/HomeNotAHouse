@@ -15,8 +15,9 @@ window.onload=function() {
     navitem.setAttribute("class","tabActiveHeader");
 
     //hide two tab contents we don't need
-    // for some reason all teh divs are being hidden...
-   	 var pages = tabcon.getElementsByTagName("div");
+    // for some reason all the divs are being hidden...RJR changed this
+   	 //var pages = tabcon.getElementsByTagName("div");
+   	var pages = document.getElementsByClassName("tabpage");
     	for (var i = 1; i < pages.length; i++) {
      	 pages.item(i).style.display="none";
 		};

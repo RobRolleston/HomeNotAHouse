@@ -13,7 +13,7 @@
 	opacity: .9
 }
 
-.tabscontent .name {
+#tabscontent .name {
 	position: absolute;
 	width: 100%;
 	height: 50px;
@@ -22,7 +22,7 @@
 	text-align:center;
 }
 
-.tabscontent .slideShow {
+#tabscontent .slideShow {
 	position: absolute;
 	width: 100%;
 	height: 200px;
@@ -30,28 +30,28 @@
 	top: 60px;
 }
 
-.tabscontent .crimeRate {
+#tabscontent .crimeRate {
 	position: absolute;
 	width: 200px;
 	height: 50px;
 	left: 20px;
 	top: 310px;
 }
-.tabscontent .homevalues {
+#tabscontent .homevalues {
 	position: absolute;
 	width: 200px;
 	height: 70px;
 	left: 20px;
 	top: 390px;
 }
-.tabscontent .map {
+#tabscontent .map {
 	position: absolute;
 	width: 150px;
 	height: 150px;
 	left: 300px;
 	top: 310px;
 }
-.tabscontent .description {
+#tabscontent .description {
 	position: absolute;
 	width: 450px;
 	height: 150px;
@@ -62,25 +62,25 @@
 	
 /***************/
 /* these are temporary to show placements */
-.tabscontent h2,h3 {
+#tabscontent h2,h3 {
 	margin: 0 auto;
 	text-align:center;
 	border:dashed white thin;
 	/* this should be reconciled with the tab styles */
 	color: white;
 }
-.tabscontent .slideShow h3 {
+#tabscontent .slideShow h3 {
 	line-height: 190px;
 }
-.tabscontent .crimeRate h3 {
+#tabscontent .crimeRate h3 {
 	line-height: 50px;
 }
-.tabscontent .homevalues h3 {
+#tabscontent .homevalues h3 {
 	line-height: 70px;
 }
-.tabscontent .map h3 {
+#tabscontent .map h3 {
 	line-height: 150px;
 }
-.tabscontent .description h3 {
+#tabscontent .description h3 {
 	line-height: 150px;
 }
