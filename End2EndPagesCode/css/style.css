@@ -24,6 +24,10 @@ html, body {
    height:100%;
 }
 
+#bodyContent {
+	padding-top: 30px;
+}
+
 #container { 
 	min-height:100%;
 	height:100%;
@@ -44,7 +48,7 @@ html, body {
 }
 
 header {
-	position: absolute;
+	/*position: absolute;*/
 	background-color: rgba(30,26,56,.5);
 	background:-webkit-linear-gradient(top, rgba(30,26,56,1) 0%, rgba(30,26,56,0) 100%);
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0, rgba(30,26,56,1), color-stop(1, rgba(30,26,56,0.25)) ));
@@ -77,7 +81,8 @@ header #headerText h3 {
 
 /* ~~ The footer ~~ */
 footer {
-	position:absolute;
+	/*position:absolute;*/
+	position:relative;
 	bottom: 0;
 	width: 100%;
 	height: 20px;
@@ -135,6 +140,7 @@ nav .navButton {
 	padding:6px 24px;
 	text-decoration:none;
 	text-shadow:1px 1px 0px #528ecc;
+	margin-top: 50px;
 	}
 nav .navButton:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
