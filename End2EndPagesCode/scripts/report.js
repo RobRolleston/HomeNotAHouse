@@ -17,8 +17,22 @@ function parseCache () {
 		var tabId = "#tabHeader_"+(i+1);
 		$(tabId).html(csaData[matchList[i]].CSA2000); 
 		//Insert Neighbborhood name into tab content
+		
+		//AMM: Writes the neighborhood name into the title spot
 		var pageId = "#tabpage_"+(i+1);
 		$(pageId+">.name>h2").html(csaData[matchList[i]].CSA2000);
+		
+		//AMM: Writes the crime rate into its corresponding slot on the tab
+		var crimeRateItem = csaData[matchList[i]].crime10 + "<br/>incidents per<br/>1,000 people";
+		$(pageId+">.crimeRate>p").html(crimeRateItem);
+		
+		//AMM: Writes the median house price into its corresponding slot on the tab
+		var housePriceItem = "Median House Price: $" + csaData[matchList[i]].salepr10;
+		$(pageId+">.homevalues>p").html(housePriceItem);
+		
+		//AMM: Writes neighborhood description into its corresponding slot on the tab
+		$(pageId+">.description>p").html(csaData[matchList[i]].description);
+		
 	};
 };
 	
