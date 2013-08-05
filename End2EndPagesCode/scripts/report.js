@@ -23,7 +23,7 @@ function parseCache () {
 		$(pageId+">.name>h2").html(csaData[matchList[i]].CSA2000);
 		
 		//AMM: Writes the crime rate into its corresponding slot on the tab
-		var crimeRateItem = csaData[matchList[i]].crime10 + "<br/>incidents per<br/>1,000 people";
+		var crimeRateItem = "Crime Rate:<br/>" + csaData[matchList[i]].crime10 + " incidents per<br/>1,000 people";
 		$(pageId+">.crimeRate>p").html(crimeRateItem);
 		
 		//AMM: Writes the median house price into its corresponding slot on the tab

@@ -39,24 +39,32 @@
 }
 #tabscontent .homevalues {
 	position: absolute;
-	width: 200px;
+	width: 150px;
 	height: 70px;
 	left: 20px;
 	top: 390px;
 }
 #tabscontent .map {
 	position: absolute;
-	width: 150px;
-	height: 150px;
-	left: 300px;
-	top: 310px;
+	width: 300px;
+	height: 200px;
+	left: 200px;
+	top: 300px;
+}
+#map {
+	position: absolute;
+	width: 300px;
+	height: 200px;
+	left: 200px;
+	top: 300px;
 }
 #tabscontent .description {
 	position: absolute;
 	width: 450px;
-	height: 150px;
+	height: 200px;
 	right: 20px;
 	top: 310px;
+	overflow:scroll;
 }
 
 	
