@@ -79,13 +79,17 @@ header #headerText h3 {
 	color: #FFD300;
 }
 
+
 /* ~~ The footer ~~ */
+
+
 footer {
 	/*position:absolute;*/
-	position:relative;
+	position:fixed;
 	bottom: 0;
 	width: 100%;
 	height: 20px;
+	z-index: 100;
 	background-color: rgba(30,26,56,.5);
 	background:-webkit-linear-gradient(bottom, rgba(30,26,56,1) 0%, rgba(30,26,56,0.25) 100%);
 	background:-webkit-gradient( linear, left bottom, left top, color-stop(0, rgba(30,26,56,1), color-stop(1, rgba(30,26,56,0.25)) ));
@@ -93,6 +97,7 @@ footer {
     background:-ms-linear-gradient(bottom, rgba(30,26,56,1) 0%, rgba(30,26,56,0.25) 100%);
 ;
 }
+
 footer p,footer a,footer a:visited {
 	font-size:10px;
 	color: #FFF;
