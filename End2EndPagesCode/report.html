@@ -9,6 +9,7 @@
 <link rel="stylesheet" type="text/css" href="css/themes/vader/jquery-ui.css" />
 <link rel="stylesheet" type="text/css" href="css/themes/vader/jquery.ui.theme.css" />
 <link rel="stylesheet" type="text/css" href="css/tabs_style.css" >
+<link rel="stylesheet" type="text/css" href="css/housePriceStyle.css" />
 <!--Include this debug.css to more easily see what divs are where-->
 <!-- <link rel="stylesheet" type="text/css" href="css/debug.css"/> -->
 
@@ -23,11 +24,13 @@
 <script src="scripts/libs/jquery.ui.tabs.js"></script>
 <!--Matching Algorithm  --  Using it to load the json file into csaData Oject 
 <script src="scripts/matchmaker.js"></script>-->
-<script src="scripts/report.js"></script>
-<script src="scripts/tabs_old.js"></script>
 <script src="scripts/maps_google.js"></script>
-<script type="text/javascript" src="scripts/housePriceJS.js"></script>
-<link type="text/css" rel="stylesheet" href="css/housePriceStyle.css" />
+<script src="scripts/housePriceJS.js"></script>
+<script src="scripts/tabs_old.js"></script>
+<script src="scripts/report.js"></script>
+
+
+
 </head>
 
 <body>
@@ -48,16 +51,16 @@
       	<div class="name"><h2>Fefault Neighbor-1</h2></div>
       	<div class="slideShow"><h3>Image roll</h3></div>
       	<div class="crimeRate"><p>Crime rate</p></div>
-      	<div class="homevalues" id="housePriceTrend"><p>Home values</p></div>
-      	<div id="map"></div>
+      	<div class="homevalues"><p>Home values</p></div>
+      	<div class="map" id="map_1"></div>
       	<div class="description"><p>Description</p></div>
       	</div>
       <div class="tabpage" id="tabpage_2">
-      	<div class="name"><h2>Fefault Neighbor-2</h2></div>
+      	<div class="name"><h2>Default Neighbor-2</h2></div>
       	<div class="slideShow"><h3>Image roll</h3></div>
       	<div class="crimeRate"><p>Crime rate</p></div>
       	<div class="homevalues"><p>Home values</p></div>
-      	<div class="map"></div>
+      	<div class="map" id="map_2"></div>
       	<div class="description"><p>Description</p></div>
       </div>
       <div class="tabpage" id="tabpage_3">
@@ -65,7 +68,7 @@
       	<div class="slideShow"><h3>Image roll</h3></div>
       	<div class="crimeRate"><p>Crime rate</p></div>
       	<div class="homevalues"><p>Home values</p></div>
-      	<div class="map"></div>
+      	<div class="map" id="map_3"></div>
       	<div class="description"><p>Description</p></div>
       </div>
     </div>

@@ -1,4 +1,57 @@
 
+function insertSlideShow (tabPageId, idxNeighborhood) {
+	// RJR: This is temporary.  Need to insert the slideshow
+	$(tabPageId+">.slideShow>h3").append(" for " + csaData[idxNeighborhood].CSA2000);
+	return true;
+	};
+
+function insertCrimeRate (tabPageId, idxNeighborhood) {
+	var crimeRateItem = "Crime Rate:<br/>" + 
+						csaData[idxNeighborhood].crime10 + 
+						" incidents per<br/>1,000 people";
+	$(tabPageId+">.crimeRate>p").html(crimeRateItem);
+	return true;
+	};
+
+function insertHousePrice (tabPageId, idxNeighborhood) {
+	divId = tabPageId+">.homevalues";
+	var divWidth = $(divId).width();
+	var divHeight = $(divId).height();
+	
+	// RJR: This is temporary.
+	// Need to replace the html, with an SVG, and draw the graph within the SVG
+	// Probably something like this in another file:
+	// function chartHouseValues(divId, idxNeighborhood) {
+    //		var width = $(divId).width() - margin.left - margin.right,
+    //		var height = $(divId).height() - margin.top - margin.bottom;
+	//		var svg = d3.select(divId).append("svg")
+	//   	.attr("width", width + margin.left + margin.right)
+    //		.attr("height", height + margin.top + margin.bottom)
+    //		.append("g")
+    //		.attr("transform", "translate(" + margin.left + "," + margin.top + ")"); 
+    //
+    //			ydaa yada yada...
+    //
+	//		}
+	var housePriceItem = "Median House Price: $" + csaData[idxNeighborhood].salepr10 +
+						"<br/> wxh: " + divWidth + " x " + divHeight;
+	$(tabPageId+">.homevalues>p").html(housePriceItem);
+	return true;
+	}
+
+
+function insertMap (tabPageId, idxNeighborhood) {
+	//mapInitialize(tabPageId, idxNeighborhood);
+}
+
+function insertDescription (tabPageId, idxNeighborhood) {
+	var desc = csaData[idxNeighborhood].description;
+	if (desc == "") 
+		desc = "No description available";
+	$(tabPageId+">.description>p").html(desc);
+	return true;
+	}
+	
 var csaData = null;
 	//Call to read the json data, and on success populate csaData as an actual javascript object of the data
 function parseCache () {	
@@ -22,16 +75,23 @@ function parseCache () {
 		var pageId = "#tabpage_"+(i+1);
 		$(pageId+">.name>h2").html(csaData[matchList[i]].CSA2000);
 		
+		// RJR: Moved all these to functions.  In hthis way, the HTMl for each is
+		// localized, as well as the use of any data.
+		//
 		//AMM: Writes the crime rate into its corresponding slot on the tab
-		var crimeRateItem = "Crime Rate:<br/>" + csaData[matchList[i]].crime10 + " incidents per<br/>1,000 people";
-		$(pageId+">.crimeRate>p").html(crimeRateItem);
+		insertCrimeRate (pageId, matchList[i]);
 		
 		//AMM: Writes the median house price into its corresponding slot on the tab
-		var housePriceItem = "Median House Price: $" + csaData[matchList[i]].salepr10;
-		$(pageId+">.homevalues>p").html(housePriceItem);
+		insertHousePrice (pageId, matchList[i]);
+		
+		//RJR: Insert map into its corresponding slot on the tab
+		insertMap (pageId, matchList[i]);
 		
 		//AMM: Writes neighborhood description into its corresponding slot on the tab
-		$(pageId+">.description>p").html(csaData[matchList[i]].description);
+		insertDescription (pageId, matchList[i]);
+		
+		// RJR: Load the slideshow images into its corresponding slot on the tab
+		insertSlideShow (pageId, matchList[i]);
 		
 	};
 };

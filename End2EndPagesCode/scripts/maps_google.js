@@ -1,5 +1,5 @@
 // STYLED GOOGLE MAP WITH BALTIMORE NEIGHBORHOODS
-function initialize() {
+function mapInitialize() {
 
 	console.log("it's mapping time!");
 
@@ -56,7 +56,7 @@ function initialize() {
 		mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
 	  }
 	};
-	var map = new google.maps.Map(document.getElementById('map'),
+	var map = new google.maps.Map(document.getElementById('map_1'),
 	  mapOptions);
   
 	//Associate the styled map with the MapTypeId and set it to display.
@@ -69,4 +69,4 @@ function initialize() {
 };
 
 	  
-google.maps.event.addDomListener(window, 'load', initialize);
+google.maps.event.addDomListener(window, 'load', mapInitialize);
