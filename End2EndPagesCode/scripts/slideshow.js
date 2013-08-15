@@ -71,7 +71,7 @@ var cycleImages = function() {
   var slide = slides[Math.floor(Math.random() * slides.length)];
   var $active = $('#slideshow .active');
   var $next = ($('#slideshow .active').next().length > 0) ? $('#slideshow .active').next() : $('#slideshow img:first');
-  $next.attr('src', '/images/' + slide);
+  $next.attr('src', 'images/' + slide);
   $next.css('z-index', 2);
   $active.fadeOut(1500, function(){
     $active.css('z-index', 1).show().removeClass('active');
