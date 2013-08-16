@@ -56,17 +56,23 @@ mapTypeControlOptions: {
 mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
 }
 };
-var map = new google.maps.Map(document.getElementById('map_1'),
-mapOptions);
+// a map for every tab
+var map1 = new google.maps.Map(document.getElementById('map_1'), mapOptions);
+var map2 = new google.maps.Map(document.getElementById('map_2'), mapOptions);
+var map3 = new google.maps.Map(document.getElementById('map_3'), mapOptions);
   
 //Associate the styled map with the MapTypeId and set it to display.
-map.mapTypes.set('map_style', styledMap);
-map.setMapTypeId('map_style');
+map1.mapTypes.set('map_style', styledMap);
+map1.setMapTypeId('map_style');
+map2.mapTypes.set('map_style', styledMap);
+map2.setMapTypeId('map_style')
+map3.mapTypes.set('map_style', styledMap);
+map3.setMapTypeId('map_style')
 
 var ctaLayer = new google.maps.KmlLayer('http://student.mica.edu/amarcotte/dataviz/Baltimore-Neighborhoods.kml');
-ctaLayer.setMap(map);
+ctaLayer.setMap(map1);
   
 };
 
 
-google.maps.event.addDomListener(window, 'load', mapInitialize);
+$(document).ready(mapInitialize);
