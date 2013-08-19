@@ -50,7 +50,7 @@ var styledMap = new google.maps.StyledMapType(styles,
 // Create a map object, and include the MapTypeId to add
 // to the map type control.
 var mapOptions = {
-zoom: 19,
+zoom: 1,
 center: new google.maps.LatLng(39.283333, -76.616667),
 mapTypeControlOptions: {
 mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
@@ -74,5 +74,7 @@ ctaLayer.setMap(map1);
   
 };
 
+//$('.button1').click(function() {google.maps.Map($('.map-1-canvas')[0], map1Options)});
 
-$(document).ready(mapInitialize);
+$('document').ready(mapInitialize);
+$('tabHeader_2').click(function() { alert("alert");});
