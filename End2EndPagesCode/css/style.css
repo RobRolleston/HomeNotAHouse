@@ -11,8 +11,8 @@
 	padding: 0px;
 }
 h1, h2, h3, h4, h5, h6, p, a {
-	font-family:"Trebuchet MS";
-	color: #fff;
+	/*font-family:"Trebuchet MS";
+	color: #fff;*/
 }
 
 /* see http://matthewjamestaylor.com/blog/keeping-footers-at-the-bottom-of-the-page
@@ -22,6 +22,7 @@ html, body {
    margin:0;
    padding:0;
    height:100%;
+   font-family: 'Oxygen', sans-serif;
 }
 
 #bodyContent {
@@ -145,13 +146,13 @@ nav {
 	padding-bottom: 20px;
 }
 
-nav .navButton {
-	-moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+.btn {
+	/*-moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
 	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #2BA221), color-stop(1, #2BA221) );
 	background:-moz-linear-gradient( center top, #2BA221 5%, #2BA221 100% );
-/*	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5');*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5');
 	background-color:#2BA221;
 	-moz-border-radius:6px;
 	-webkit-border-radius:6px;
@@ -159,33 +160,66 @@ nav .navButton {
 	border:1px solid #2BA221;
 	display:inline-block;
 	color:#FFF;
-	/*font-family:arial;*/
+	font-family:arial;
 	font-size:15px;
 	font-weight:bold;
 	padding:6px 24px;
 	text-decoration:none;
 	text-shadow:1px 1px 0px #528ecc;
-	margin-top: 50px;
-	}
-nav .navButton:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
+	margin-top: 50px;*/
+	-moz-box-shadow: 0px 1px 0px 0px #fff6af;
+	-webkit-box-shadow: 0px 1px 0px 0px #fff6af;
+	box-shadow: 0px 1px 0px 0px #fff6af;
+	
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+	background:-moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23',GradientType=0);
+	
+	background-color:#ffec64;
+	
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	color:#000;
+	font-size:15px;
+	font-weight: bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0 1px 0 #ffee66;
+}
+.btn:hover {
+	/*background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
 	background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
-/*	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');*/
-	background-color:#378de5;
-	}
-nav .navButton:active {
-	position:relative;
-	top:1px;
-	}
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
+	background-color:#378de5;*/
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
+	background:-moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-ms-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64',GradientType=0);
+	background-color:#ffab23;
+}
+.btn:active {
+	position: relative;
+	top: 1px;
+}
 
 nav a:link {
-	color:#FFF
-	text-decoration: none;
+	/*color:#FFF
+	text-decoration: none;*/
 }
 
 nav a:visited {
-	color: #FFF;
-	text-decoration: none;
+	/*color: #FFF;
+	text-decoration: none;*/
 }
 nav a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
 	text-decoration: none;

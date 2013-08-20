@@ -1,3 +1,9 @@
+$(function(){
+      $("#slides").slidesjs({
+        width: 400,
+        height: 300
+      });
+    });
 
 function insertSlideShow (tabPageId, idxNeighborhood) {
 	// RJR: This is temporary.  Need to insert the slideshow

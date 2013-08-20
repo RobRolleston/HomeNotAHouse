@@ -10,6 +10,7 @@
 <link rel="stylesheet" type="text/css" href="css/themes/vader/jquery.ui.theme.css" />
 <link rel="stylesheet" type="text/css" href="css/tabs_style.css" >
 <link rel="stylesheet" type="text/css" href="css/housePriceStyle.css" />
+<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
 <!--Include this debug.css to more easily see what divs are where-->
 <!-- <link rel="stylesheet" type="text/css" href="css/debug.css"/> -->
 
@@ -18,7 +19,7 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqhhjfXiLBRjsQrE1kdx53ZEe36C-gL58&sensor=false">
 </script>
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-<script src="scripts/libs/jquery-2.0.3.min.js" ></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="scripts/libs/jquery.ui.core.js"></script>
 <script src="scripts/libs/jquery.ui.widget.js"></script>
 <script src="scripts/libs/jquery.ui.tabs.js"></script>
@@ -26,33 +27,75 @@
 <script src="scripts/housePriceJS.js"></script>
 <script src="scripts/tabs_old.js"></script>
 <script src="scripts/report.js"></script>
+<script src="scripts/libs/jquery.slides.min.js"></script>
 
 
 
 </head>
 
 <body>
-<div id="container">
+<!--<div id="container">-->
+<div class="reportWrapper">
 
 <header >
   <img id="headerLogo" src="images/logo.png" alt="Insert Logo Here" name="Logo" />
-  <div id="headerText"><h1>Home not a House</h1></div>
+<!--  <div id="headerText"><h1>Home not a House</h1></div>-->
   <div class="clearfloat"></div>
 <!-- end .header --></header>
 
-<div id="bodyContent">
+<div id="bodyContent" class="reportBody">
 
-<div class = "content" id="tabsContainer">
- 
+	<div class="reportContent" id="tabsContainer">
+ 		<div id="tabs">
+            <ul>
+              <li id="tabHeader_1">Perfect soulmate</li>
+              <li id="tabHeader_2">Close enough to a soulmate</li>
+              <li id="tabHeader_3">Great date</li>
+            </ul>
+        </div>
+    
     <div id="tabscontent">
+    
       <div class="tabpage" id="tabpage_1">
-       <div class="name"><h2>Default Neighbor-1</h2></div>
-       <div class="slideShow"><h3>Image roll</h3></div>
-       <div class="crimeRate"><p>Crime rate</p></div>
-       <div class="homevalues"><p>Home values</p></div>
-       <div class="map" id="map_1"></div>
-       <div class="description"><p>Description</p></div>
-       </div>
+         <div class="name"><h2>Default Neighborhood-1</h2></div>
+
+		 <div class="menuWrapper">
+            <ul>
+                <li>
+                    <a href="javascript:void(0);" class="off-screen-nav-button" data-effeckt="off-screen-nav-left-push">
+                        <span class="hnhIcon mapIcon"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <span class="hnhIcon housePriceIcon"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <span class="hnhIcon crimeIcon"></span>
+                    </a>
+                </li>
+            </ul>
+         </div>
+         
+         <div id="slides" class="slideShow">
+         	<img src="images/placeholder.jpg" alt="placeholder image" />
+            <img src="images/placeholder.jpg" alt="placeholder image" />
+            <img src="images/placeholder.jpg" alt="placeholder image" />
+         </div>
+         
+		 <div class="description">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+         </div>
+         
+         <div class="crimeRate hide"><p>Crime rate</p></div>
+         <div class="homevalues hide"><p>Home values</p></div>
+         <div class="map hide" id="map_1"></div>
+
+      </div>
+       
+       
       <div class="tabpage" id="tabpage_2">
        <div class="name"><h2>Default Neighbor-2</h2></div>
        <div class="slideShow"><h3>Image roll</h3></div>
@@ -61,6 +104,7 @@
        <div class="map" id="map_2"></div>
        <div class="description"><p>Description</p></div>
       </div>
+      
       <div class="tabpage" id="tabpage_3">
        <div class="name"><h2>Default Neighbor-3</h2></div>
        <div class="slideShow"><h3>Image roll</h3></div>
@@ -71,21 +115,26 @@
       </div>
     </div>
 
-    <div id="tabs">
-      <ul>
-        <li id="tabHeader_1">Default Neighbor-1</li>
-        <li id="tabHeader_2">Default Neighbor-2</li>
-        <li id="tabHeader_3">Default Neighbor-3</li>
-      </ul>
-    </div>
+    
     
 <!-- end .content --></div>
 
-<nav>
-    <button type="button" name="returnBtn" class="navButton">
+<!--<nav class="backToSearchBtnWrapper">
+    <button type="button" name="returnBtn" class="navButton backToSearchBtn">
         <a href="index.html">Try another set of choices</a>
     </button>
-</nav><br>
+</nav>-->
+
+<div id="contactRealtorWrapper" class="contactRealtorWrapper" style="right:0px; bottom:0px;">
+	<div id="contactRealtor_outer">
+        <div id="contactRealtor">
+            <a href="#" id="close_button">x</a>
+            <div class="contactRealtor_text">
+              contact a realtor!  
+            </div>
+        </div>
+	</div>
+</div>
 
 <!-- end #bodyConent --></div>
 <footer>
